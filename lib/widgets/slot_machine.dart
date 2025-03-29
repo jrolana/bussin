@@ -33,6 +33,7 @@ class SlotMachineRoller extends StatefulWidget {
 
   /// To stop value. when it is null, it is seamless rolling
   final int? target;
+
   /// For random sample in your target range.
   /// Because during the rolling, items are randomly
   final int minTarget, maxTarget;
@@ -134,6 +135,12 @@ class SlotMachine extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    List<String> imageUrl = [
+      "https://mcdomenu.ph/wp-content/uploads/2024/09/Mcdo-Big-Mac.webp",
+      "https://mcdomenu.ph/wp-content/uploads/2024/09/1pc-Chicken-McDo-with-McSpaghetti.webp",
+      "https://mcdomenu.ph/wp-content/uploads/2024/11/Liptin-Iced-Tea.webp",
+    ];
+
     return LayoutBuilder(
       builder: (context, constraints) {
         final width = (constraints.maxWidth).clamp(.0, 533.0);
@@ -168,13 +175,13 @@ class SlotMachine extends StatelessWidget {
                         itemBuilder: (number) {
                           if (number == 1) {
                             return Image.asset(
-                              'mcdo_logo.png',
+                              'lib/assets/mcdo_logo.png',
                               height: screenSize.height,
                               width: screenSize.width / 3 - 1,
                             );
                           } else {
                             return Image.network(
-                              "https://mcdomenu.ph/wp-content/uploads/2024/09/Mcdo-Big-Mac.webp",
+                              imageUrl[index],
                               height: screenSize.height,
                               width: screenSize.width / 3 - 1,
                             );

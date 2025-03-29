@@ -1,7 +1,17 @@
-import 'slot_machine/slot_machine_roller.dart';
+import 'widgets/slot_machine.dart';
 import 'package:flutter/material.dart';
+import 'dart:async';
+import 'services/database_service.dart';
+import 'package:bussin/model/item.dart';
 
-void main() {
+void main() async {
+  // Avoid errors caused by flutter upgrade.
+  // Importing 'package:flutter/widgets.dart' is required.
+  WidgetsFlutterBinding.ensureInitialized();
+  // Open the database and store the reference.
+  await DatabaseService.instance.initDb();
+  await DatabaseService.instance.initializeItem();
+
   runApp(const MyApp());
 }
 
