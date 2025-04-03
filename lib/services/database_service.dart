@@ -1,8 +1,9 @@
-import 'package:path/path.dart';
-import 'package:sqflite/sqflite.dart';
+import 'json_service.dart';
 import 'package:bussin/model/item.dart';
 
 import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:path/path.dart';
+import 'package:sqflite/sqflite.dart';
 import 'package:sqflite_common_ffi_web/sqflite_ffi_web.dart';
 
 class DatabaseService {
@@ -51,9 +52,9 @@ class DatabaseService {
     );
   }
 
-  Future<List<Map<String, dynamic>>> queryAllItems() async {
+  Future<List<Map<String, dynamic>>> queryAllItems(String table) async {
     Database db = await instance.db;
-    return await db.query('main');
+    return await db.query(table);
   }
 
   Future<int> updateItem(Item item, String table) async {
@@ -72,47 +73,14 @@ class DatabaseService {
   }
 
   Future<void> initializeItem() async {
-    List<Item> mainItems = [
-      Item(
-        name: "Big Mac",
-        price: 180,
-        imageUrl:
-            "https://mcdomenu.ph/wp-content/uploads/2024/09/Mcdo-Big-Mac.webp",
-      ),
-      Item(
-        name: "Burger Mcdo",
-        price: 44,
-        imageUrl:
-            "https://mcdomenu.ph/wp-content/uploads/2024/09/Mcdonalds-Burger-McDo.webp",
-      ),
-      Item(
-        name: "Quarter Pounder with Cheese",
-        price: 179,
-        imageUrl:
-            "https://mcdomenu.ph/wp-content/uploads/2025/02/McDo-Quarter-Pounder-with-Cheese.webp",
-      ),
-    ];
+    List<dynamic> drinkItems = await loadJsonMenu("drink");
+    List<dynamic> mainItems = await loadJsonMenu("main");
+    List<dynamic> sideItems = await loadJsonMenu("side");
+    List<dynamic> mealItems = await loadJsonMenu("meal");
 
-    List<Item> sideItems = [
-      Item(
-        name: "BB Fries",
-        price: 174,
-        imageUrl:
-            "https://mcdomenu.ph/wp-content/uploads/2024/11/BBF-Fries-1.webp",
-      ),
-      Item(
-        name: "Regular Fries",
-        price: 72,
-        imageUrl:
-            "https://mcdomenu.ph/wp-content/uploads/2024/12/Regular-Fries.webp",
-      ),
-      Item(
-        name: "Shake Shake Fries Cheese",
-        price: 96,
-        imageUrl:
-            "https://mcdomenu.ph/wp-content/uploads/2024/11/Shake-Shake-Fries-Cheese-2.webp",
-      ),
-    ];
+    for (Item item in drinkItems) {
+      await insertItem(item, 'drink');
+    }
 
     for (Item item in mainItems) {
       await insertItem(item, 'main');
@@ -120,6 +88,10 @@ class DatabaseService {
 
     for (Item item in sideItems) {
       await insertItem(item, 'side');
+    }
+
+    for (Item item in mealItems) {
+      await insertItem(item, 'meal');
     }
   }
 }

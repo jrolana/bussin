@@ -1,0 +1,244 @@
+{
+  "main": [
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/09/Mcdo-Big-Mac.webp",
+      "name": "Big Mac  (Small)",
+      "price": 182
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/09/Mcdo-Big-Mac.webp",
+      "name": "Big Mac  (Medium)",
+      "price": 507
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/09/Mcdonalds-Burger-McDo.webp",
+      "name": "Burger McDo (Small)",
+      "price": 44
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/09/Mcdonalds-Burger-McDo.webp",
+      "name": "Burger McDo (Medium)",
+      "price": 347
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/02/McDo-Quarter-Pounder-with-Cheese.webp",
+      "name": "Quarter Pounder with Cheese  (Small)",
+      "price": 179
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/02/McDo-Quarter-Pounder-with-Cheese.webp",
+      "name": "Quarter Pounder with Cheese  (Medium)",
+      "price": 540
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/02/MCDO-Cheeseburger-Deluxe.webp",
+      "name": "Cheeseburger Deluxe (Small)",
+      "price": 79
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/02/MCDO-Cheeseburger-Deluxe.webp",
+      "name": "Cheeseburger Deluxe (Medium)",
+      "price": 340
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/09/McDonalds-Cheeseburger.webp",
+      "name": "Cheeseburger Solo (Small)",
+      "price": 82
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/09/McDonalds-Cheeseburger.webp",
+      "name": "Cheeseburger Solo (Medium)",
+      "price": 301
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/09/McCrispy-Chicken-Sandwich-mcdo.webp",
+      "name": "Crispy Chicken Sandwich Solo (Small)",
+      "price": 70
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/09/McCrispy-Chicken-Sandwich-mcdo.webp",
+      "name": "Crispy Chicken Sandwich Solo (Medium)",
+      "price": 321
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/09/McDonalds-McChicken-Sandwich.webp",
+      "name": "McChicken Solo (Small)",
+      "price": 103
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/09/McDonalds-McChicken-Sandwich.webp",
+      "name": "McChicken Solo (Medium)",
+      "price": 383
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/09/McDO-Double-Cheeseburger.webp",
+      "name": "Double Cheeseburger Solo (Small)",
+      "price": 142
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/09/McDO-Double-Cheeseburger.webp",
+      "name": "Double Cheeseburger Solo (Medium)",
+      "price": 440
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Burger-Mcdo-with-Lettuce.jpg",
+      "name": "Burger Mcdo with Lettuce & Tomato (Small)",
+      "price": 79
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Burger-Mcdo-with-Lettuce.jpg",
+      "name": "Burger Mcdo with Lettuce & Tomato (Medium)",
+      "price": 440
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/crispy-chicken-sandwitch-with-lettuce.jpg",
+      "name": "McCrispy Chicken Sandwich w/ Lettuce (Small)",
+      "price": 99
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/crispy-chicken-sandwitch-with-lettuce.jpg",
+      "name": "McCrispy Chicken Sandwich w/ Lettuce (Medium)",
+      "price": 530
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Double-cheese-burger-with-lettuce.jpg",
+      "name": "Double cheese burger w/ Lettuce (Small)",
+      "price": 177
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Double-cheese-burger-with-lettuce.jpg",
+      "name": "Double cheese burger w/ Lettuce (Medium)",
+      "price": 570
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Double-Mc-Chicken-Solo.jpg",
+      "name": "Double Mc Chicken  (Small)",
+      "price": 142
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Double-Mc-Chicken-Solo.jpg",
+      "name": "Double Mc Chicken  (Medium)",
+      "price": 540
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Double-Quarter-Pounder-with-Cheese.jpg",
+      "name": "Double Quarter W/ Cheese (Small)",
+      "price": 242
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Double-Quarter-Pounder-with-Cheese.jpg",
+      "name": "Double Quarter W/ Cheese (Medium)",
+      "price": 740
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Triple-Cheese-burger.jpg",
+      "name": "Triple Cheese Burger (Small)",
+      "price": 179
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Triple-Cheese-burger.jpg",
+      "name": "Triple Cheese Burger (Medium)",
+      "price": 530
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/09/1pc-Chicken-McDo-with-McSpaghetti.webp",
+      "name": "1pc Chicken McDo with McSpaghetti ",
+      "price": 155
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/09/2pc-Chicken-McDo-with-Rice.webp",
+      "name": "2pc Chicken McDo with Rice",
+      "price": 183
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/09/1pc-Chicken-McDo-with-Rice.webp",
+      "name": "1pc Chicken McDo with Rice",
+      "price": 92
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/02/McCrispy-Chicken-Fillet-with-Rice.webp",
+      "name": "McCrispy Chicken Fillet with Rice",
+      "price": 82
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/6-pc.-Chicken-McNuggets.webp",
+      "name": "6-pc. Chicken McNuggets",
+      "price": 103
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/02/McCrispy-Chicken-Fillet-Ala-King.webp",
+      "name": "McCrispy Chicken Fillet Ala King\u00a0",
+      "price": 89
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Chessy-Eggdesal-with-Ham-1.webp",
+      "name": "Chessy Eggdesal with Ham Solo",
+      "price": 99
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Sausage-McMuffin-with-Egg-Solo-1.webp",
+      "name": "Sausage McMuffin with Egg Solo",
+      "price": 118
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/2-pc.-Hotcakes-Solo-3.webp",
+      "name": "2- pc. Hotcakes Solo\u00a0",
+      "price": 86
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/2-pc.-Hotcakes-with-Sausage-Solo-1.webp",
+      "name": "2pc Hotcakes with Sausage",
+      "price": 118
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/2-pc.-Hotcakes-with-Hash-Brown-Meal-1.webp",
+      "name": "2- pc. Hotcakes with Hash Brown Meal\u00a0 \u00a0\u00a0",
+      "price": 140
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/2-pc.-Hotcakes-Sausage-with-Hash-Brown-Meal-1.webp",
+      "name": "2- pc. Hotcakes & Sausage with Hash Brown Meal\u00a0 \u00a0",
+      "price": 177
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Big-Breakfast-Meal-3.webp",
+      "name": "Big Breakfast Meal",
+      "price": 185
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/1-\u2013-pc.-Mushroom-pepper-Steak-with-Garlic-Rice-Egg-Hash-Brown-Rice-Bowl-Meal-1.webp",
+      "name": "1\u2013 pc. Mushroom pepper Steak with Garlic Rice, Egg, & Hash Brown Rice Bowl Meal\u00a0\u00a0\u00a0",
+      "price": 182
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/2-\u2013-pc.-Mushroom-pepper-Steak-with-Garlic-Rice-Egg-Hash-Brown-Rice-Bowl-Meal-1.webp",
+      "name": "2\u2013 pc. Mushroom pepper Steak with Garlic Rice, Egg, & Hash Brown Rice Bowl Meal\u00a0",
+      "price": 212
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Sausage-with-Egg-Rice-Bowl-Solo-1.webp",
+      "name": "Sausage with Egg Rice Bowl Solo\u00a0\u00a0\u00a0",
+      "price": 138
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/2\u2013-pc.-Chicken-McDo-with-Egg-Solo-1.webp",
+      "name": "2\u2013pc.-Chicken-McDo-with-Egg-Solo",
+      "price": 225
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Sausage-McMuffin-Solo-1.webp",
+      "name": "Sausage McMuffin Solo\u00a0",
+      "price": 98
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Crispy-chicken-Fillet-with-Egg-Hash-Brown-Meal-1.webp",
+      "name": "Crispy chicken Fillet with Egg & Hash Brown Meal\u00a0\u00a0",
+      "price": 177
+    },
+    {
+      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Chessy-Eggdesal-with-Ham-Hash-Brown-Meal-1.webp",
+      "name": "Chessy Eggdesal with Ham & Hash Brown Meal\u00a0\u00a0\u00a0",
+      "price": 154
+    }
+  ]
+}
