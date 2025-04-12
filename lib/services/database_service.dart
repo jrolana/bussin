@@ -24,7 +24,12 @@ class DatabaseService {
     String databasesPath = await getDatabasesPath();
     String path = join(databasesPath, 'menu.db');
 
-    return await openDatabase(path, version: 2, onCreate: _onCreate);
+    return await openDatabase(
+      path,
+      version: 2,
+      onCreate: _onCreate,
+      onUpgrade: _onUpgrade,
+    );
   }
 
   Future _onCreate(Database db, int version) async {
@@ -45,6 +50,16 @@ class DatabaseService {
     );
 
     await instance.initializeItems();
+  }
+
+  Future _onUpgrade(Database db, int oldVersion, int newVersion) async {
+    await db.execute('DROP TABLE IF EXISTS main');
+    await db.execute('DROP TABLE IF EXISTS side');
+    await db.execute('DROP TABLE IF EXISTS drink');
+    await db.execute('DROP TABLE IF EXISTS meal');
+    await db.execute('DROP TABLE IF EXISTS favorites');
+
+    await _onCreate(db, newVersion);
   }
 
   Future<int> insertItem(Item item, String table) async {
