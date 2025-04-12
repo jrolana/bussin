@@ -19,13 +19,17 @@ class DatabaseService {
 
   Future<Database> initDb() async {
     if (kIsWeb) {
-      // Change default factory on the web
       databaseFactory = databaseFactoryFfiWeb;
     }
     String databasesPath = await getDatabasesPath();
     String path = join(databasesPath, 'menu.db');
 
-    return await openDatabase(path, version: 1, onCreate: _onCreate);
+    return await openDatabase(
+      path,
+      version: 2,
+      onCreate: _onCreate,
+      onUpgrade: _onUpgrade,
+    );
   }
 
   Future _onCreate(Database db, int version) async {
@@ -41,6 +45,21 @@ class DatabaseService {
     await db.execute(
       'CREATE TABLE meal(id INTEGER PRIMARY KEY, name TEXT NOT NULL, price FLOAT NOT NULL, imageUrl TEXT NOT NULL)',
     );
+    await db.execute(
+      'CREATE TABLE favorites(id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, price FLOAT NOT NULL, imageUrl TEXT NOT NULL)',
+    );
+
+    await instance.initializeItems();
+  }
+
+  Future _onUpgrade(Database db, int oldVersion, int newVersion) async {
+    await db.execute('DROP TABLE IF EXISTS main');
+    await db.execute('DROP TABLE IF EXISTS side');
+    await db.execute('DROP TABLE IF EXISTS drink');
+    await db.execute('DROP TABLE IF EXISTS meal');
+    await db.execute('DROP TABLE IF EXISTS favorites');
+
+    await _onCreate(db, newVersion);
   }
 
   Future<int> insertItem(Item item, String table) async {
@@ -50,11 +69,6 @@ class DatabaseService {
       item.toMap(),
       conflictAlgorithm: ConflictAlgorithm.replace,
     );
-  }
-
-  Future<List<Map<String, dynamic>>> queryAllItems(String table) async {
-    Database db = await instance.db;
-    return await db.query(table);
   }
 
   Future<int> updateItem(Item item, String table) async {
@@ -72,7 +86,7 @@ class DatabaseService {
     return await db.delete(table, where: 'id = ?', whereArgs: [id]);
   }
 
-  Future<void> initializeItem() async {
+  Future<void> initializeItems() async {
     List<dynamic> drinkItems = await loadJsonMenu("drink");
     List<dynamic> mainItems = await loadJsonMenu("main");
     List<dynamic> sideItems = await loadJsonMenu("side");

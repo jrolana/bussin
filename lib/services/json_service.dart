@@ -8,6 +8,6 @@ Future loadJsonMenu(String category) async {
   final categoryItems = itemsDecoded[category];
 
   List<dynamic> items =
-      categoryItems.map((item) => Item.fromJson(item)).toList();
+      categoryItems.map((item) => Item.fromMap(item)).toList();
   return items;
 }

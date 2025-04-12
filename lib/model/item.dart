@@ -23,17 +23,8 @@ class Item {
     return Item(
       id: map['id'],
       name: map['name'],
-      price: map['price'],
+      price: map['price'].toDouble(),
       imageUrl: map['imageUrl'],
-    );
-  }
-
-  factory Item.fromJson(Map<String, dynamic> json) {
-    return Item(
-      id: json['id'],
-      name: json['name'],
-      price: json['price'],
-      imageUrl: json['imageUrl'],
     );
   }
 

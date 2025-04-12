@@ -1,7 +1,4 @@
 import 'dart:async';
-import 'dart:developer';
-
-import 'package:bussin/model/item.dart';
 
 import 'services/database_service.dart';
 import 'widgets/slot_machine.dart';
@@ -9,23 +6,8 @@ import 'widgets/slot_machine.dart';
 import 'package:flutter/material.dart';
 
 void main() async {
-  // Avoid errors caused by flutter upgrade.
-  // Importing 'package:flutter/widgets.dart' is required.
   WidgetsFlutterBinding.ensureInitialized();
-  // Open the database and store the reference.
   await DatabaseService.instance.initDb();
-  await DatabaseService.instance.initializeItem();
-
-  // Query Sample
-  List<Map> result = await DatabaseService.instance.queryAllItems('side');
-
-  List<Item> results = [
-    for (final {'id': id, 'name': name, 'price': price, 'imageUrl': imageUrl}
-        in result)
-      Item(id: id, name: name, price: price, imageUrl: imageUrl),
-  ];
-
-  results.forEach((r) => log(r.name));
 
   runApp(const MyApp());
 }
@@ -63,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
       targets = List<int?>.filled(3, null);
     });
 
-    await Future.delayed(const Duration(seconds: 3));
+    await Future.delayed(const Duration(seconds: 2));
     setState(() {
       targets = List<int?>.filled(3, 3);
     });
