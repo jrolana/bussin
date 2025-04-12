@@ -1,5 +1,9 @@
 import 'dart:async';
 
+import 'package:bussin/exceptions/not_enough_money.dart';
+import 'package:bussin/model/item.dart';
+import 'package:bussin/services/mcrandomizer_service.dart';
+
 import 'services/database_service.dart';
 import 'widgets/slot_machine.dart';
 
@@ -41,6 +45,13 @@ class _MyHomePageState extends State<MyHomePage> {
   var targets = List<int?>.filled(3, 1);
 
   Future<void> _incrementCounter() async {
+    try {
+      print(
+        await mcrandomizer(main: true, side: false, drink: true, maxPrice: 300),
+      );
+    } on NotEnoughMoneyException catch (e) {
+      print(e.cause);
+    }
     setState(() {
       targets = List<int?>.filled(3, null);
     });
