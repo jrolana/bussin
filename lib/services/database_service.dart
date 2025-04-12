@@ -22,14 +22,9 @@ class DatabaseService {
       databaseFactory = databaseFactoryFfiWeb;
     }
     String databasesPath = await getDatabasesPath();
-    String path = join(databasesPath, 'menu.db');
+    String path = join(databasesPath, 'main.db');
 
-    return await openDatabase(
-      path,
-      version: 2,
-      onCreate: _onCreate,
-      onUpgrade: _onUpgrade,
-    );
+    return await openDatabase(path, version: 1, onCreate: _onCreate);
   }
 
   Future _onCreate(Database db, int version) async {
@@ -48,22 +43,11 @@ class DatabaseService {
     await db.execute(
       'CREATE TABLE favorites(id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, price FLOAT NOT NULL, imageUrl TEXT NOT NULL)',
     );
-
-    await instance.initializeItems();
+    await instance.initializeItems(db);
   }
 
-  Future _onUpgrade(Database db, int oldVersion, int newVersion) async {
-    await db.execute('DROP TABLE IF EXISTS main');
-    await db.execute('DROP TABLE IF EXISTS side');
-    await db.execute('DROP TABLE IF EXISTS drink');
-    await db.execute('DROP TABLE IF EXISTS meal');
-    await db.execute('DROP TABLE IF EXISTS favorites');
-
-    await _onCreate(db, newVersion);
-  }
-
-  Future<int> insertItem(Item item, String table) async {
-    Database db = await instance.db;
+  Future<int> insertItem(Item item, String table, {Database? db}) async {
+    db ??= await instance.db;
     return await db.insert(
       table,
       item.toMap(),
@@ -71,8 +55,8 @@ class DatabaseService {
     );
   }
 
-  Future<int> updateItem(Item item, String table) async {
-    Database db = await instance.db;
+  Future<int> updateItem(Item item, String table, {Database? db}) async {
+    db ??= await instance.db;
     return await db.update(
       table,
       item.toMap(),
@@ -81,31 +65,31 @@ class DatabaseService {
     );
   }
 
-  Future<int> deleteItem(int id, String table) async {
-    Database db = await instance.db;
+  Future<int> deleteItem(int id, String table, {Database? db}) async {
+    db ??= await instance.db;
     return await db.delete(table, where: 'id = ?', whereArgs: [id]);
   }
 
-  Future<void> initializeItems() async {
+  Future<void> initializeItems(Database db) async {
     List<dynamic> drinkItems = await loadJsonMenu("drink");
     List<dynamic> mainItems = await loadJsonMenu("main");
     List<dynamic> sideItems = await loadJsonMenu("side");
     List<dynamic> mealItems = await loadJsonMenu("meal");
 
     for (Item item in drinkItems) {
-      await insertItem(item, 'drink');
+      await insertItem(item, 'drink', db: db);
     }
 
     for (Item item in mainItems) {
-      await insertItem(item, 'main');
+      await insertItem(item, 'main', db: db);
     }
 
     for (Item item in sideItems) {
-      await insertItem(item, 'side');
+      await insertItem(item, 'side', db: db);
     }
 
     for (Item item in mealItems) {
-      await insertItem(item, 'meal');
+      await insertItem(item, 'meal', db: db);
     }
   }
 }
