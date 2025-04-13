@@ -67,11 +67,7 @@ class _SlotMachineRollerState extends State<SlotMachineRoller> {
             final cached =
                 before == null
                     ? <int>[]
-                    : <int>[before!] +
-                        (List.generate(
-                          widget.period.inMilliseconds ~/ 125,
-                          (index) => getRandomTarget(),
-                        ));
+                    : <int>[before!] + (List.generate(4, (index) => 1));
             if (data != null) {
               cached.add(data);
               before = data;
@@ -111,36 +107,28 @@ class _SlotMachineRollerState extends State<SlotMachineRoller> {
 
   Stream<int> startPipe() async* {
     pipeClosed = false;
-    final lastData = before ?? widget.target ?? getRandomTarget();
+    final lastData = before ?? widget.target ?? 1;
     before = null;
     yield lastData;
     await Future.delayed(widget.delay);
     before = null;
     while (widget.target == null) {
-      yield before == null ? lastData : getRandomTarget();
+      yield before == null ? lastData : 1;
       await Future.delayed(widget.period);
     }
     pipeClosed = true;
     yield widget.target!;
   }
-
-  int getRandomTarget() =>
-      widget.minTarget + rng.nextInt(widget.maxTarget - widget.minTarget + 1);
 }
 
 class SlotMachine extends StatelessWidget {
-  const SlotMachine({super.key, required this.targets});
+  const SlotMachine({super.key, required this.targets, required this.imageUrl});
 
   final List<int?> targets;
+  final List<String?> imageUrl;
 
   @override
   Widget build(BuildContext context) {
-    List<String> imageUrl = [
-      "https://mcdomenu.ph/wp-content/uploads/2024/09/Mcdo-Big-Mac.webp",
-      "https://mcdomenu.ph/wp-content/uploads/2024/09/1pc-Chicken-McDo-with-McSpaghetti.webp",
-      "https://mcdomenu.ph/wp-content/uploads/2024/11/Liptin-Iced-Tea.webp",
-    ];
-
     return LayoutBuilder(
       builder: (context, constraints) {
         final width = (constraints.maxWidth).clamp(.0, 533.0);
@@ -173,7 +161,7 @@ class SlotMachine extends StatelessWidget {
                         height: screenSize.height,
                         width: screenSize.width / 3 - 1,
                         itemBuilder: (number) {
-                          if (number == 1) {
+                          if (number == 1 || imageUrl[index] == null) {
                             return Image.asset(
                               'lib/assets/mcdo_logo.png',
                               height: screenSize.height,
@@ -181,7 +169,7 @@ class SlotMachine extends StatelessWidget {
                             );
                           } else {
                             return Image.network(
-                              imageUrl[index],
+                              imageUrl[index]!,
                               height: screenSize.height,
                               width: screenSize.width / 3 - 1,
                             );
