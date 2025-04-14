@@ -1,99 +1,92 @@
-{
-  "side": [
+[
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/BBF-Fries-1.webp",
-      "name": "BB Fries",
-      "price": 174
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/BBF-Fries-1.webp",
+        "name": "BB Fries",
+        "price": 174
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/12/Regular-Fries.webp",
-      "name": "Regular Fries",
-      "price": 72
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/12/Regular-Fries.webp",
+        "name": "Regular Fries",
+        "price": 72
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Fries-1.webp",
-      "name": "Fries (Small)",
-      "price": 89
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Fries-1.webp",
+        "name": "Fries",
+        "price": 89
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Fries-1.webp",
-      "name": "Fries (Medium)",
-      "price": 109
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Shake-Shake-fries-BBQ.webp",
+        "name": "Shake Shake Fries BBQ",
+        "price": 96
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Shake-Shake-fries-BBQ.webp",
-      "name": "Shake Shake Fries BBQ",
-      "price": 96
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/12/BFF-Shake-Shake-Fries-BBQ.webp",
+        "name": "BFF Shake Shake Fries BBQ",
+        "price": 194
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/12/BFF-Shake-Shake-Fries-BBQ.webp",
-      "name": "BFF Shake Shake Fries BBQ",
-      "price": 194
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Shake-Shake-Fries-Cheese-2.webp",
+        "name": "Shake Shake Fries Cheese",
+        "price": 96
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Shake-Shake-Fries-Cheese-2.webp",
-      "name": "Shake Shake Fries Cheese",
-      "price": 96
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/12/BFF-Shake-Shake-Fries-Cheese.webp",
+        "name": "BFF Shake Shake Fries Cheese",
+        "price": 194
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/12/BFF-Shake-Shake-Fries-Cheese.webp",
-      "name": "BFF Shake Shake Fries Cheese",
-      "price": 194
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Extra-Gravy.webp",
+        "name": "Exta Gravy Solo",
+        "price": 11
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Extra-Gravy.webp",
-      "name": "Exta Gravy Solo",
-      "price": 11
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Extra-sweet-and-sour-soup.webp",
+        "name": "Extra Sweet and Sour Soup",
+        "price": 17
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Extra-sweet-and-sour-soup.webp",
-      "name": "Extra Sweet and Sour Soup",
-      "price": 17
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Extra-plain-rice.webp",
+        "name": "Extra Plain Rice Solo",
+        "price": 39
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Extra-plain-rice.webp",
-      "name": "Extra Plain Rice Solo",
-      "price": 39
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McFlurry-with-Oreo.webp",
+        "name": "McFlurry with Oreo Cookies",
+        "price": 69
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McFlurry-with-Oreo.webp",
-      "name": "McFlurry with Oreo Cookies",
-      "price": 69
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Hot-Caramel-Sundae.webp",
+        "name": "Hot Caramel Sundae",
+        "price": 57
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Hot-Caramel-Sundae.webp",
-      "name": "Hot Caramel Sundae",
-      "price": 57
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Hot-Fudge-Sundae.webp",
+        "name": "Hot Fudge Sundae",
+        "price": 57
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Hot-Fudge-Sundae.webp",
-      "name": "Hot Fudge Sundae",
-      "price": 57
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Apple-Pie.webp",
+        "name": "Apple Pie",
+        "price": 45
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Apple-Pie.webp",
-      "name": "Apple Pie",
-      "price": 45
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Oreo-Cheesecake.webp",
+        "name": "Oreo Cheesecake",
+        "price": 35
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Oreo-Cheesecake.webp",
-      "name": "Oreo Cheesecake",
-      "price": 35
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Blueberry-Cheesecake.webp",
+        "name": "Blueberry Cheesecake",
+        "price": 135
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Blueberry-Cheesecake.webp",
-      "name": "Blueberry Cheesecake",
-      "price": 135
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Chocolate-Chip-Cookie.webp",
+        "name": "Chocolate Chip Cookie",
+        "price": 80
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Chocolate-Chip-Cookie.webp",
-      "name": "Chocolate Chip Cookie",
-      "price": 80
-    },
-    {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Dark-Chocolate-Cake.webp",
-      "name": "Dark Chocolate Cake",
-      "price": 120
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Dark-Chocolate-Cake.webp",
+        "name": "Dark Chocolate Cake",
+        "price": 120
     }
-  ]
-}
+]

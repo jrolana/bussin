@@ -22,9 +22,14 @@ class DatabaseService {
       databaseFactory = databaseFactoryFfiWeb;
     }
     String databasesPath = await getDatabasesPath();
-    String path = join(databasesPath, 'main.db');
+    String path = join(databasesPath, 'db.db');
 
-    return await openDatabase(path, version: 1, onCreate: _onCreate);
+    return await openDatabase(
+      path,
+      version: 1,
+      onCreate: _onCreate,
+      onUpgrade: _onUpgrade,
+    );
   }
 
   Future _onCreate(Database db, int version) async {
@@ -41,9 +46,17 @@ class DatabaseService {
       'CREATE TABLE meal(id INTEGER PRIMARY KEY, name TEXT NOT NULL, price FLOAT NOT NULL, imageUrl TEXT NOT NULL)',
     );
     await db.execute(
-      'CREATE TABLE favorites(id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, price FLOAT NOT NULL, imageUrl TEXT NOT NULL)',
+      'CREATE TABLE favorites(id INTEGER PRIMARY KEY, name TEXT NOT NULL, price FLOAT NOT NULL, imageUrl TEXT NOT NULL)',
     );
     await instance.initializeItems(db);
+  }
+
+  Future _onUpgrade(Database db, int oldVersion, int newVersion) async {
+    await db.execute('DROP TABLE IF EXISTS main');
+    await db.execute('DROP TABLE IF EXISTS side');
+    await db.execute('DROP TABLE IF EXISTS drink');
+    await db.execute('DROP TABLE IF EXISTS meal');
+    await _onCreate(db, newVersion);
   }
 
   Future<int> insertItem(Item item, String table, {Database? db}) async {
