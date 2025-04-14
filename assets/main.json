@@ -1,172 +1,172 @@
 [
     {
         "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/09/Mcdo-Big-Mac.webp",
-        "name": "Big Mac ",
-        "price": "₱ 182"
+        "name": "Big Mac",
+        "price": 182
     },
     {
         "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/09/Mcdonalds-Burger-McDo.webp",
         "name": "Burger McDo",
-        "price": "₱ 44"
+        "price": 44
     },
     {
         "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/02/McDo-Quarter-Pounder-with-Cheese.webp",
-        "name": "Quarter Pounder with Cheese ",
-        "price": "₱ 179"
+        "name": "Quarter Pounder with Cheese",
+        "price": 179
     },
     {
         "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/02/MCDO-Cheeseburger-Deluxe.webp",
         "name": "Cheeseburger Deluxe",
-        "price": "₱ 79"
+        "price": 79
     },
     {
         "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/09/McDonalds-Cheeseburger.webp",
         "name": "Cheeseburger Solo",
-        "price": "₱ 82"
+        "price": 82
     },
     {
         "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/09/McCrispy-Chicken-Sandwich-mcdo.webp",
         "name": "Crispy Chicken Sandwich Solo",
-        "price": "₱ 70"
+        "price": 70
     },
     {
         "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/09/McDonalds-McChicken-Sandwich.webp",
         "name": "McChicken Solo",
-        "price": "₱ 103"
+        "price": 103
     },
     {
         "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/09/McDO-Double-Cheeseburger.webp",
         "name": "Double Cheeseburger Solo",
-        "price": "₱ 142"
+        "price": 142
     },
     {
         "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Burger-Mcdo-with-Lettuce.jpg",
         "name": "Burger Mcdo with Lettuce & Tomato",
-        "price": "₱ 79"
+        "price": 79
     },
     {
         "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/crispy-chicken-sandwitch-with-lettuce.jpg",
         "name": "McCrispy Chicken Sandwich w/ Lettuce",
-        "price": "₱ 99"
+        "price": 99
     },
     {
         "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Double-cheese-burger-with-lettuce.jpg",
         "name": "Double cheese burger w/ Lettuce",
-        "price": "₱177"
+        "price": 177
     },
     {
         "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Double-Mc-Chicken-Solo.jpg",
-        "name": "Double Mc Chicken ",
-        "price": "₱ 142"
+        "name": "Double Mc Chicken",
+        "price": 142
     },
     {
         "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Double-Quarter-Pounder-with-Cheese.jpg",
         "name": "Double Quarter W/ Cheese",
-        "price": "₱ 242"
+        "price": 242
     },
     {
         "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Triple-Cheese-burger.jpg",
         "name": "Triple Cheese Burger",
-        "price": "₱ 179"
+        "price": 179
     },
     {
         "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/09/1pc-Chicken-McDo-with-McSpaghetti.webp",
-        "name": "1pc Chicken McDo with McSpaghetti ",
-        "price": "₱ 155"
+        "name": "1pc Chicken McDo with McSpaghetti",
+        "price": 155
     },
     {
         "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/09/2pc-Chicken-McDo-with-Rice.webp",
         "name": "2pc Chicken McDo with Rice",
-        "price": "₱ 183"
+        "price": 183
     },
     {
         "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/09/1pc-Chicken-McDo-with-Rice.webp",
         "name": "1pc Chicken McDo with Rice",
-        "price": "₱ 92"
+        "price": 92
     },
     {
         "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/02/McCrispy-Chicken-Fillet-with-Rice.webp",
         "name": "McCrispy Chicken Fillet with Rice",
-        "price": "₱ 82"
+        "price": 82
     },
     {
         "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/6-pc.-Chicken-McNuggets.webp",
         "name": "6-pc. Chicken McNuggets",
-        "price": "₱ 103"
+        "price": 103
     },
     {
         "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/02/McCrispy-Chicken-Fillet-Ala-King.webp",
-        "name": "McCrispy Chicken Fillet Ala King ",
-        "price": "₱ 89"
+        "name": "McCrispy Chicken Fillet Ala King",
+        "price": 89
     },
     {
         "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Chessy-Eggdesal-with-Ham-1.webp",
         "name": "Chessy Eggdesal with Ham Solo",
-        "price": "₱ 99"
+        "price": 99
     },
     {
         "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Sausage-McMuffin-with-Egg-Solo-1.webp",
         "name": "Sausage McMuffin with Egg Solo",
-        "price": "₱ 118"
+        "price": 118
     },
     {
         "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/2-pc.-Hotcakes-Solo-3.webp",
-        "name": "2- pc. Hotcakes Solo ",
-        "price": "₱ 86"
+        "name": "2- pc. Hotcakes Solo",
+        "price": 86
     },
     {
         "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/2-pc.-Hotcakes-with-Sausage-Solo-1.webp",
         "name": "2pc Hotcakes with Sausage",
-        "price": "₱ 118"
+        "price": 118
     },
     {
         "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/2-pc.-Hotcakes-with-Hash-Brown-Meal-1.webp",
-        "name": "2- pc. Hotcakes with Hash Brown Meal    ",
-        "price": "₱ 140"
+        "name": "2- pc. Hotcakes with Hash Brown Meal",
+        "price": 140
     },
     {
         "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/2-pc.-Hotcakes-Sausage-with-Hash-Brown-Meal-1.webp",
-        "name": "2- pc. Hotcakes & Sausage with Hash Brown Meal   ",
-        "price": "₱ 177"
+        "name": "2- pc. Hotcakes & Sausage with Hash Brown Meal",
+        "price": 177
     },
     {
         "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Big-Breakfast-Meal-3.webp",
         "name": "Big Breakfast Meal",
-        "price": "₱ 185"
+        "price": 185
     },
     {
         "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/1-–-pc.-Mushroom-pepper-Steak-with-Garlic-Rice-Egg-Hash-Brown-Rice-Bowl-Meal-1.webp",
-        "name": "1– pc. Mushroom pepper Steak with Garlic Rice, Egg, & Hash Brown Rice Bowl Meal   ",
-        "price": "₱ 182"
+        "name": "1– pc. Mushroom pepper Steak with Garlic Rice, Egg, & Hash Brown Rice Bowl Meal",
+        "price": 182
     },
     {
         "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/2-–-pc.-Mushroom-pepper-Steak-with-Garlic-Rice-Egg-Hash-Brown-Rice-Bowl-Meal-1.webp",
-        "name": "2– pc. Mushroom pepper Steak with Garlic Rice, Egg, & Hash Brown Rice Bowl Meal ",
-        "price": "₱ 212"
+        "name": "2– pc. Mushroom pepper Steak with Garlic Rice, Egg, & Hash Brown Rice Bowl Meal",
+        "price": 212
     },
     {
         "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Sausage-with-Egg-Rice-Bowl-Solo-1.webp",
-        "name": "Sausage with Egg Rice Bowl Solo   ",
-        "price": "₱ 138"
+        "name": "Sausage with Egg Rice Bowl Solo",
+        "price": 138
     },
     {
         "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/2–-pc.-Chicken-McDo-with-Egg-Solo-1.webp",
         "name": "2–pc.-Chicken-McDo-with-Egg-Solo",
-        "price": "₱ 225"
+        "price": 225
     },
     {
         "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Sausage-McMuffin-Solo-1.webp",
-        "name": "Sausage McMuffin Solo ",
-        "price": "₱98"
+        "name": "Sausage McMuffin Solo",
+        "price": 98
     },
     {
         "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Crispy-chicken-Fillet-with-Egg-Hash-Brown-Meal-1.webp",
-        "name": "Crispy chicken Fillet with Egg & Hash Brown Meal  ",
-        "price": "₱177"
+        "name": "Crispy chicken Fillet with Egg & Hash Brown Meal",
+        "price": 177
     },
     {
         "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Chessy-Eggdesal-with-Ham-Hash-Brown-Meal-1.webp",
-        "name": "Chessy Eggdesal with Ham & Hash Brown Meal   ",
-        "price": "₱ 154"
+        "name": "Chessy Eggdesal with Ham & Hash Brown Meal",
+        "price": 154
     }
 ]

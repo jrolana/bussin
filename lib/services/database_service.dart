@@ -22,11 +22,11 @@ class DatabaseService {
       databaseFactory = databaseFactoryFfiWeb;
     }
     String databasesPath = await getDatabasesPath();
-    String path = join(databasesPath, 'main.db');
+    String path = join(databasesPath, 'db.db');
 
     return await openDatabase(
       path,
-      version: 2,
+      version: 1,
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
     );
@@ -46,7 +46,7 @@ class DatabaseService {
       'CREATE TABLE meal(id INTEGER PRIMARY KEY, name TEXT NOT NULL, price FLOAT NOT NULL, imageUrl TEXT NOT NULL)',
     );
     await db.execute(
-      'CREATE TABLE favorites(id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, price FLOAT NOT NULL, imageUrl TEXT NOT NULL)',
+      'CREATE TABLE favorites(id INTEGER PRIMARY KEY, name TEXT NOT NULL, price FLOAT NOT NULL, imageUrl TEXT NOT NULL)',
     );
     await instance.initializeItems(db);
   }
