@@ -72,7 +72,10 @@ class OneSlotMachineState extends State<OneSlotMachine> {
                     gradient: LinearGradient(
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
-                      colors: [Colors.white, Colors.white.withOpacity(0.0)],
+                      colors: [
+                        Colors.white,
+                        Colors.white.withValues(alpha: 0.0),
+                      ],
                     ),
                   ),
                 ),
