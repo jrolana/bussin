@@ -1,3 +1,4 @@
+import 'package:bussin/widgets/one_slot_machine.dart';
 import 'package:bussin/widgets/three_slots_machine.dart';
 import 'services/database_service.dart';
 import 'package:flutter/material.dart';
@@ -36,6 +37,10 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   final threeSlotsMachine = GlobalKey<ThreeSlotsMachineState>();
+  final oneSlotMachine = GlobalKey<OneSlotMachineState>();
+  // True == three
+  // False == one
+  bool mode = true;
 
   @override
   Widget build(BuildContext context) {
@@ -48,20 +53,47 @@ class _MyHomePageState extends State<MyHomePage> {
         padding: EdgeInsets.all(15),
         child: LayoutBuilder(
           builder: (context, constraints) {
-            return ThreeSlotsMachine.ThreeSlotsMachine(
-              key: threeSlotsMachine,
-              itemSize: constraints.maxWidth / 3,
-              maxPrice: 200,
-            );
+            if (mode) {
+              return ThreeSlotsMachine.ThreeSlotsMachine(
+                key: threeSlotsMachine,
+                itemSize: constraints.maxWidth / 3,
+                maxPrice: 200,
+              );
+            } else {
+              return OneSlotMachine.OneSlotMachine(
+                key: oneSlotMachine,
+                itemSize: constraints.maxWidth / 3,
+                maxPrice: 200,
+              );
+            }
           },
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          threeSlotsMachine.currentState?.rollSlots();
-        },
-        tooltip: 'Rolling',
-        child: const Icon(Icons.rocket_launch_outlined),
+      floatingActionButton: Row(
+        mainAxisAlignment: MainAxisAlignment.end,
+        spacing: 10,
+        children: [
+          FloatingActionButton(
+            onPressed: () {
+              setState(() {
+                mode = !mode;
+              });
+            },
+            tooltip: 'Mode',
+            child: const Icon(Icons.mode),
+          ),
+          FloatingActionButton(
+            onPressed: () {
+              if (mode) {
+                threeSlotsMachine.currentState?.rollSlots();
+              } else {
+                oneSlotMachine.currentState?.rollSlots();
+              }
+            },
+            tooltip: 'Rolling',
+            child: const Icon(Icons.rocket_launch_outlined),
+          ),
+        ],
       ),
     );
   }
