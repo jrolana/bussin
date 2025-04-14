@@ -53,7 +53,7 @@ class OneSlotMachineState extends State<OneSlotMachine> {
       children: [
         Container(
           height: widget.itemSize * 3,
-          decoration: BoxDecoration(color: Colors.white),
+          decoration: BoxDecoration(),
           clipBehavior: Clip.antiAlias,
           child: Stack(
             children: [
