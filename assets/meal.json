@@ -1,494 +1,492 @@
-{
-  "meal": [
+[
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Burger-McDo-Meal-2.webp",
-      "name": "Burger McDO w/ Drink & Fries Meal (Small)",
-      "price": 115
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Burger-McDo-Meal-2.webp",
+        "name": "Burger McDO w/ Drink & Fries Meal (Small)",
+        "price": "₱ 115"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Burger-McDo-Meal-2.webp",
-      "name": "Burger McDO w/ Drink & Fries Meal (Medium)",
-      "price": 145
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Burger-McDo-Meal-2.webp",
+        "name": "Burger McDO w/ Drink & Fries Meal (Medium)",
+        "price": "₱ 145"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Burger-McDo-Meal-2.webp",
-      "name": "Burger McDO w/ Drink & Fries Meal (Large)",
-      "price": 171
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Burger-McDo-Meal-2.webp",
+        "name": "Burger McDO w/ Drink & Fries Meal (Large)",
+        "price": "₱ 171"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/McCrispy-Chicken-Sandwich-with-Tamatoes-and-Lettuce-Meal-1.webp",
-      "name": " McCrispy Chicken Sandwich & Lettuce w/ Drink & Fries  (Small)",
-      "price": 177
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/McCrispy-Chicken-Sandwich-with-Tamatoes-and-Lettuce-Meal-1.webp",
+        "name": " McCrispy Chicken Sandwich & Lettuce w/ Drink & Fries  (Small)",
+        "price": "₱ 177"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/McCrispy-Chicken-Sandwich-with-Tamatoes-and-Lettuce-Meal-1.webp",
-      "name": " McCrispy Chicken Sandwich & Lettuce w/ Drink & Fries  (Medium)",
-      "price": 207
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/McCrispy-Chicken-Sandwich-with-Tamatoes-and-Lettuce-Meal-1.webp",
+        "name": " McCrispy Chicken Sandwich & Lettuce w/ Drink & Fries  (Medium)",
+        "price": "₱ 207"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/McCrispy-Chicken-Sandwich-with-Tamatoes-and-Lettuce-Meal-1.webp",
-      "name": " McCrispy Chicken Sandwich & Lettuce w/ Drink & Fries  (Large)",
-      "price": 233
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/McCrispy-Chicken-Sandwich-with-Tamatoes-and-Lettuce-Meal-1.webp",
+        "name": " McCrispy Chicken Sandwich & Lettuce w/ Drink & Fries  (Large)",
+        "price": "₱ 233"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Big-Mac-Meal-3.webp",
-      "name": "Big Mac w/ Fries & Drink (Small)",
-      "price": 247
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Big-Mac-Meal-3.webp",
+        "name": "Big Mac w/ Fries & Drink (Small)",
+        "price": "₱ 247"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Big-Mac-Meal-3.webp",
-      "name": "Big Mac w/ Fries & Drink (Medium)",
-      "price": 277
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Big-Mac-Meal-3.webp",
+        "name": "Big Mac w/ Fries & Drink (Medium)",
+        "price": "₱ 277"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Big-Mac-Meal-3.webp",
-      "name": "Big Mac w/ Fries & Drink (Large)",
-      "price": 303
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Big-Mac-Meal-3.webp",
+        "name": "Big Mac w/ Fries & Drink (Large)",
+        "price": "₱ 303"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Filet-o-Fish-Meal-sandwich.webp",
-      "name": "Crispy Fish Fillet Sandwich w/ Fries & Drink",
-      "price": 275
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Filet-o-Fish-Meal-sandwich.webp",
+        "name": "Crispy Fish Fillet Sandwich w/ Fries & Drink",
+        "price": "₱ 275"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Double-Crispy-Fish-Fillet-Sandwich-4.webp",
-      "name": "Double Crispy Fish Fillet Sandwich w/ Fries & Drink (Small)",
-      "price": 281
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Double-Crispy-Fish-Fillet-Sandwich-4.webp",
+        "name": "Double Crispy Fish Fillet Sandwich w/ Fries & Drink (Small)",
+        "price": "₱ 281"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Double-Crispy-Fish-Fillet-Sandwich-4.webp",
-      "name": "Double Crispy Fish Fillet Sandwich w/ Fries & Drink (Medium)",
-      "price": 345
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Double-Crispy-Fish-Fillet-Sandwich-4.webp",
+        "name": "Double Crispy Fish Fillet Sandwich w/ Fries & Drink (Medium)",
+        "price": "₱ 345"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Quarter-Pounder-with-Cheese-Meal.webp",
-      "name": " Quarter Pounder With Cheese Fries & Drinks (Small)",
-      "price": 303
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Quarter-Pounder-with-Cheese-Meal.webp",
+        "name": " Quarter Pounder With Cheese Fries & Drinks (Small)",
+        "price": "₱ 303"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Quarter-Pounder-with-Cheese-Meal.webp",
-      "name": " Quarter Pounder With Cheese Fries & Drinks (Medium)",
-      "price": 312
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Quarter-Pounder-with-Cheese-Meal.webp",
+        "name": " Quarter Pounder With Cheese Fries & Drinks (Medium)",
+        "price": "₱ 312"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Quarter-Pounder-with-Cheese-Meal.webp",
-      "name": " Quarter Pounder With Cheese Fries & Drinks (Large)",
-      "price": 338
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Quarter-Pounder-with-Cheese-Meal.webp",
+        "name": " Quarter Pounder With Cheese Fries & Drinks (Large)",
+        "price": "₱ 338"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Double-Cheese-Burger-Meal.webp",
-      "name": "Double Cheese Burger w/ Fries & Drink (Small)",
-      "price": 244
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Double-Cheese-Burger-Meal.webp",
+        "name": "Double Cheese Burger w/ Fries & Drink (Small)",
+        "price": "₱ 244"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Double-Cheese-Burger-Meal.webp",
-      "name": "Double Cheese Burger w/ Fries & Drink (Medium)",
-      "price": 274
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Double-Cheese-Burger-Meal.webp",
+        "name": "Double Cheese Burger w/ Fries & Drink (Medium)",
+        "price": "₱ 274"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Double-Cheese-Burger-Meal.webp",
-      "name": "Double Cheese Burger w/ Fries & Drink (Large)",
-      "price": 300
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Double-Cheese-Burger-Meal.webp",
+        "name": "Double Cheese Burger w/ Fries & Drink (Large)",
+        "price": "₱ 300"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Double-Big-MAc-Meal.webp",
-      "name": "Double Big Mac Meal",
-      "price": 352
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Double-Big-MAc-Meal.webp",
+        "name": "Double Big Mac Meal",
+        "price": "₱ 352"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Cheese-Burger-Meal.webp",
-      "name": "Cheese Burger w/ Fries & Drink (Small)",
-      "price": 103
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Cheese-Burger-Meal.webp",
+        "name": "Cheese Burger w/ Fries & Drink (Small)",
+        "price": "₱ 103"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Cheese-Burger-Meal.webp",
-      "name": "Cheese Burger w/ Fries & Drink (Medium)",
-      "price": 138
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Cheese-Burger-Meal.webp",
+        "name": "Cheese Burger w/ Fries & Drink (Medium)",
+        "price": "₱ 138"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Cheese-Burger-Meal.webp",
-      "name": "Cheese Burger w/ Fries & Drink (Large)",
-      "price": 166
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Cheese-Burger-Meal.webp",
+        "name": "Cheese Burger w/ Fries & Drink (Large)",
+        "price": "₱ 166"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Triple-Cheese-Burger-Meal.webp",
-      "name": "Triple Cheeseburger w/ Fries & Drink (Small)",
-      "price": 225
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Triple-Cheese-Burger-Meal.webp",
+        "name": "Triple Cheeseburger w/ Fries & Drink (Small)",
+        "price": "₱ 225"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Triple-Cheese-Burger-Meal.webp",
-      "name": "Triple Cheeseburger w/ Fries & Drink (Medium)",
-      "price": 285
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Triple-Cheese-Burger-Meal.webp",
+        "name": "Triple Cheeseburger w/ Fries & Drink (Medium)",
+        "price": "₱ 285"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Triple-Cheese-Burger-Meal.webp",
-      "name": "Triple Cheeseburger w/ Fries & Drink (Large)",
-      "price": 311
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Triple-Cheese-Burger-Meal.webp",
+        "name": "Triple Cheeseburger w/ Fries & Drink (Large)",
+        "price": "₱ 311"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/McChicken-Meal.png",
-      "name": "McChicken w/ Fries & Drink (Small)",
-      "price": 193
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/McChicken-Meal.png",
+        "name": "McChicken w/ Fries & Drink (Small)",
+        "price": "₱ 193"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/McChicken-Meal.png",
-      "name": "McChicken w/ Fries & Drink (Medium)",
-      "price": 223
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/McChicken-Meal.png",
+        "name": "McChicken w/ Fries & Drink (Medium)",
+        "price": "₱ 223"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/McChicken-Meal.png",
-      "name": "McChicken w/ Fries & Drink (Large)",
-      "price": 249
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/McChicken-Meal.png",
+        "name": "McChicken w/ Fries & Drink (Large)",
+        "price": "₱ 249"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Double-McChicken-Meal.webp",
-      "name": "Double McChicken w/ Fries & Drink (Small)",
-      "price": 224
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Double-McChicken-Meal.webp",
+        "name": "Double McChicken w/ Fries & Drink (Small)",
+        "price": "₱ 224"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Double-McChicken-Meal.webp",
-      "name": "Double McChicken w/ Fries & Drink (Medium)",
-      "price": 254
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Double-McChicken-Meal.webp",
+        "name": "Double McChicken w/ Fries & Drink (Medium)",
+        "price": "₱ 254"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Double-McChicken-Meal.webp",
-      "name": "Double McChicken w/ Fries & Drink (Large)",
-      "price": 280
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Double-McChicken-Meal.webp",
+        "name": "Double McChicken w/ Fries & Drink (Large)",
+        "price": "₱ 280"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/McCrispy-Chicken-Sandwich-Meal-1.webp",
-      "name": "McCrispy Chicken Sandwich  w/ Fries & Drink Meal (Small)",
-      "price": 142
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/McCrispy-Chicken-Sandwich-Meal-1.webp",
+        "name": "McCrispy Chicken Sandwich  w/ Fries & Drink Meal (Small)",
+        "price": "₱ 142"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/McCrispy-Chicken-Sandwich-Meal-1.webp",
-      "name": "McCrispy Chicken Sandwich  w/ Fries & Drink Meal (Medium)",
-      "price": 172
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/McCrispy-Chicken-Sandwich-Meal-1.webp",
+        "name": "McCrispy Chicken Sandwich  w/ Fries & Drink Meal (Medium)",
+        "price": "₱ 172"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/McCrispy-Chicken-Sandwich-Meal-1.webp",
-      "name": "McCrispy Chicken Sandwich  w/ Fries & Drink Meal (Large)",
-      "price": 198
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/McCrispy-Chicken-Sandwich-Meal-1.webp",
+        "name": "McCrispy Chicken Sandwich  w/ Fries & Drink Meal (Large)",
+        "price": "₱ 198"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Quarter-Pounder-with-Tomatoes-Cheese-and-Lettuce.png",
-      "name": "Quarter Pounder with Tomatoes, Cheese and Lettuce Meal (Small)",
-      "price": 303
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Quarter-Pounder-with-Tomatoes-Cheese-and-Lettuce.png",
+        "name": "Quarter Pounder with Tomatoes, Cheese and Lettuce Meal (Small)",
+        "price": "₱ 303"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Quarter-Pounder-with-Tomatoes-Cheese-and-Lettuce.png",
-      "name": "Quarter Pounder with Tomatoes, Cheese and Lettuce Meal (Medium)",
-      "price": 312
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Quarter-Pounder-with-Tomatoes-Cheese-and-Lettuce.png",
+        "name": "Quarter Pounder with Tomatoes, Cheese and Lettuce Meal (Medium)",
+        "price": "₱ 312"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Quarter-Pounder-with-Tomatoes-Cheese-and-Lettuce.png",
-      "name": "Quarter Pounder with Tomatoes, Cheese and Lettuce Meal (Large)",
-      "price": 338
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Quarter-Pounder-with-Tomatoes-Cheese-and-Lettuce.png",
+        "name": "Quarter Pounder with Tomatoes, Cheese and Lettuce Meal (Large)",
+        "price": "₱ 338"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/02/Black-Pepper-McChicken-with-Fries-and-Lipton-Cool-Berry.webp",
-      "name": "Black Pepper McChicken with Fries and Lipton Cool Berry (Small)",
-      "price": 325
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/02/Black-Pepper-McChicken-with-Fries-and-Lipton-Cool-Berry.webp",
+        "name": "Black Pepper McChicken with Fries and Lipton Cool Berry (Small)",
+        "price": "₱ 325"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/02/Black-Pepper-McChicken-with-Fries-and-Lipton-Cool-Berry.webp",
-      "name": "Black Pepper McChicken with Fries and Lipton Cool Berry (Medium)",
-      "price": 375
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/02/Black-Pepper-McChicken-with-Fries-and-Lipton-Cool-Berry.webp",
+        "name": "Black Pepper McChicken with Fries and Lipton Cool Berry (Medium)",
+        "price": "₱ 375"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/02/Black-Pepper-McChicken-with-Fries-and-Lipton-Cool-Berry.webp",
-      "name": "Black Pepper McChicken with Fries and Lipton Cool Berry (Large)",
-      "price": 395
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/02/Black-Pepper-McChicken-with-Fries-and-Lipton-Cool-Berry.webp",
+        "name": "Black Pepper McChicken with Fries and Lipton Cool Berry (Large)",
+        "price": "₱ 395"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/1-pc-Chicken-McDo-Mcspaghetti-with-Drink.webp",
-      "name": "1-pc Chicken McDo Mcspaghetti with Drink",
-      "price": 195
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/1-pc-Chicken-McDo-Mcspaghetti-with-Drink.webp",
+        "name": "1-pc Chicken McDo Mcspaghetti with Drink",
+        "price": "₱ 195"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/1-pc-Chicken-McDo-with-Drink-Fries-1.webp",
-      "name": " 1-pc Chicken McDo with Drink & Fries (Small)",
-      "price": 164
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/1-pc-Chicken-McDo-with-Drink-Fries-1.webp",
+        "name": " 1-pc Chicken McDo with Drink & Fries (Small)",
+        "price": "₱164"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/1-pc-Chicken-McDo-with-Drink-Fries-1.webp",
-      "name": " 1-pc Chicken McDo with Drink & Fries (Medium)",
-      "price": 194
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/1-pc-Chicken-McDo-with-Drink-Fries-1.webp",
+        "name": " 1-pc Chicken McDo with Drink & Fries (Medium)",
+        "price": "₱194"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/1-pc-Chicken-McDo-with-Drink-Fries-1.webp",
-      "name": " 1-pc Chicken McDo with Drink & Fries (Large)",
-      "price": 220
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/1-pc-Chicken-McDo-with-Drink-Fries-1.webp",
+        "name": " 1-pc Chicken McDo with Drink & Fries (Large)",
+        "price": "₱220"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/1-pc-Chicken-McDo-with-Drink-1.webp",
-      "name": "1-pc Chicken McDo with Drink (Small)",
-      "price": 113
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/1-pc-Chicken-McDo-with-Drink-1.webp",
+        "name": "1-pc Chicken McDo with Drink (Small)",
+        "price": "₱113"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/1-pc-Chicken-McDo-with-Drink-1.webp",
-      "name": "1-pc Chicken McDo with Drink (Medium)",
-      "price": 118
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/1-pc-Chicken-McDo-with-Drink-1.webp",
+        "name": "1-pc Chicken McDo with Drink (Medium)",
+        "price": "₱142"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/1-pc-Chicken-McDo-with-Drink-1.webp",
-      "name": "1-pc Chicken McDo with Drink (Large)",
-      "price": 142
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/1-pc-Chicken-McDo-with-Drink-1.webp",
+        "name": "1-pc Chicken McDo with Drink (Large)",
+        "price": "₱ 99"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/1-pc-Chicken-McDo-with-one-Rice-Coke-Mcfloat-1.webp",
-      "name": "1-pc Chicken McDo with one Rice Coke Mcfloat",
-      "price": 140
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/1-pc-Chicken-McDo-with-one-Rice-Coke-Mcfloat-1.webp",
+        "name": "1-pc Chicken McDo with one Rice Coke Mcfloat",
+        "price": "₱140"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/2-pc-Chicken-McDo-with-Drink-Fries-1.webp",
-      "name": "2-pc Chicken McDo with Drink & Fries (Small)",
-      "price": 253
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/2-pc-Chicken-McDo-with-Drink-Fries-1.webp",
+        "name": "2-pc Chicken McDo with Drink & Fries (Small)",
+        "price": "₱253"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/2-pc-Chicken-McDo-with-Drink-Fries-1.webp",
-      "name": "2-pc Chicken McDo with Drink & Fries (Medium)",
-      "price": 283
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/2-pc-Chicken-McDo-with-Drink-Fries-1.webp",
+        "name": "2-pc Chicken McDo with Drink & Fries (Medium)",
+        "price": "₱283"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/2-pc-Chicken-McDo-with-Drink-Fries-1.webp",
-      "name": "2-pc Chicken McDo with Drink & Fries (Large)",
-      "price": 309
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/2-pc-Chicken-McDo-with-Drink-Fries-1.webp",
+        "name": "2-pc Chicken McDo with Drink & Fries (Large)",
+        "price": "₱309"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/2-pc-Chicken-McDo-with-Drink-1.webp",
-      "name": " 2-pc Chicken McDo with Drink   (Small)",
-      "price": 217
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/2-pc-Chicken-McDo-with-Drink-1.webp",
+        "name": " 2-pc Chicken McDo with Drink   (Small)",
+        "price": "₱217"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/2-pc-Chicken-McDo-with-Drink-1.webp",
-      "name": " 2-pc Chicken McDo with Drink   (Medium)",
-      "price": 229
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/2-pc-Chicken-McDo-with-Drink-1.webp",
+        "name": " 2-pc Chicken McDo with Drink   (Medium)",
+        "price": "₱229"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/2-pc-Chicken-McDo-with-Drink-1.webp",
-      "name": " 2-pc Chicken McDo with Drink   (Large)",
-      "price": 242
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/2-pc-Chicken-McDo-with-Drink-1.webp",
+        "name": " 2-pc Chicken McDo with Drink   (Large)",
+        "price": "₱242"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/1-pc-Chicken-McDo-Mcspaghetti-with-Drink-and-Fries-1.webp",
-      "name": "1-pc Chicken McDo Mcspaghetti with Drink and Fries (Small)",
-      "price": 226
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/1-pc-Chicken-McDo-Mcspaghetti-with-Drink-and-Fries-1.webp",
+        "name": "1-pc Chicken McDo Mcspaghetti with Drink and Fries (Small)",
+        "price": "₱226"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/1-pc-Chicken-McDo-Mcspaghetti-with-Drink-and-Fries-1.webp",
-      "name": "1-pc Chicken McDo Mcspaghetti with Drink and Fries (Medium)",
-      "price": 256
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/1-pc-Chicken-McDo-Mcspaghetti-with-Drink-and-Fries-1.webp",
+        "name": "1-pc Chicken McDo Mcspaghetti with Drink and Fries (Medium)",
+        "price": "₱256"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/1-pc-Chicken-McDo-Mcspaghetti-with-Drink-and-Fries-1.webp",
-      "name": "1-pc Chicken McDo Mcspaghetti with Drink and Fries (Large)",
-      "price": 282
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/1-pc-Chicken-McDo-Mcspaghetti-with-Drink-and-Fries-1.webp",
+        "name": "1-pc Chicken McDo Mcspaghetti with Drink and Fries (Large)",
+        "price": "₱282"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/1-pc-sweets-BBQ-Glazed-with-Drink-and-fries-1.webp",
-      "name": "1-pc sweets BBQ Glazed with Drink and fries (Small)",
-      "price": 176
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/1-pc-sweets-BBQ-Glazed-with-Drink-and-fries-1.webp",
+        "name": "1-pc sweets BBQ Glazed with Drink and fries (Small)",
+        "price": "₱176"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/1-pc-sweets-BBQ-Glazed-with-Drink-and-fries-1.webp",
-      "name": "1-pc sweets BBQ Glazed with Drink and fries (Medium)",
-      "price": 206
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/1-pc-sweets-BBQ-Glazed-with-Drink-and-fries-1.webp",
+        "name": "1-pc sweets BBQ Glazed with Drink and fries (Medium)",
+        "price": "₱206"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/1-pc-sweets-BBQ-Glazed-with-Drink-and-fries-1.webp",
-      "name": "1-pc sweets BBQ Glazed with Drink and fries (Large)",
-      "price": 223
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/1-pc-sweets-BBQ-Glazed-with-Drink-and-fries-1.webp",
+        "name": "1-pc sweets BBQ Glazed with Drink and fries (Large)",
+        "price": "₱223"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/2-pc-sweets-BBQ-Glazed-with-fries-1.webp",
-      "name": "2-pc sweets BBQ Glazed with Drink (Small)",
-      "price": 233
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/2-pc-sweets-BBQ-Glazed-with-fries-1.webp",
+        "name": "2-pc sweets BBQ Glazed with Drink (Small)",
+        "price": "₱233"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/2-pc-sweets-BBQ-Glazed-with-fries-1.webp",
-      "name": "2-pc sweets BBQ Glazed with Drink (Medium)",
-      "price": 241
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/2-pc-sweets-BBQ-Glazed-with-fries-1.webp",
+        "name": "2-pc sweets BBQ Glazed with Drink (Medium)",
+        "price": "₱241"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/2-pc-sweets-BBQ-Glazed-with-fries-1.webp",
-      "name": "2-pc sweets BBQ Glazed with Drink (Large)",
-      "price": 266
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/2-pc-sweets-BBQ-Glazed-with-fries-1.webp",
+        "name": "2-pc sweets BBQ Glazed with Drink (Large)",
+        "price": "₱266"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/02/Crispy-Chicken-fillet-with-Drink-and-Fries.webp",
-      "name": "Crispy Chicken fillet with Drink and Fries (Small)",
-      "price": 129
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/02/Crispy-Chicken-fillet-with-Drink-and-Fries.webp",
+        "name": "Crispy Chicken fillet with Drink and Fries (Small)",
+        "price": "₱129"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/02/Crispy-Chicken-fillet-with-Drink-and-Fries.webp",
-      "name": "Crispy Chicken fillet with Drink and Fries (Medium)",
-      "price": 159
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/02/Crispy-Chicken-fillet-with-Drink-and-Fries.webp",
+        "name": "Crispy Chicken fillet with Drink and Fries (Medium)",
+        "price": "₱159"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/02/Crispy-Chicken-fillet-with-Drink-and-Fries.webp",
-      "name": "Crispy Chicken fillet with Drink and Fries (Large)",
-      "price": 185
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/02/Crispy-Chicken-fillet-with-Drink-and-Fries.webp",
+        "name": "Crispy Chicken fillet with Drink and Fries (Large)",
+        "price": "₱185"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/02/6-pc-Chicken-McNuggets-with-drink-and-fries.webp",
-      "name": "6-pc Chicken McNuggets with drink and fries (Small)",
-      "price": 175
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/02/6-pc-Chicken-McNuggets-with-drink-and-fries.webp",
+        "name": "6-pc Chicken McNuggets with drink and fries (Small)",
+        "price": "₱175"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/02/6-pc-Chicken-McNuggets-with-drink-and-fries.webp",
-      "name": "6-pc Chicken McNuggets with drink and fries (Medium)",
-      "price": 205
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/02/6-pc-Chicken-McNuggets-with-drink-and-fries.webp",
+        "name": "6-pc Chicken McNuggets with drink and fries (Medium)",
+        "price": "₱205"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/02/6-pc-Chicken-McNuggets-with-drink-and-fries.webp",
-      "name": "6-pc Chicken McNuggets with drink and fries (Large)",
-      "price": 231
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/02/6-pc-Chicken-McNuggets-with-drink-and-fries.webp",
+        "name": "6-pc Chicken McNuggets with drink and fries (Large)",
+        "price": "₱231"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/02/6-pc-Chicken-McNuggets-with-drink.webp",
-      "name": "6-pc Chicken McNuggets with drink (Small)",
-      "price": 172
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/02/6-pc-Chicken-McNuggets-with-drink.webp",
+        "name": "6-pc Chicken McNuggets with drink (Small)",
+        "price": "₱172"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/02/6-pc-Chicken-McNuggets-with-drink.webp",
-      "name": "6-pc Chicken McNuggets with drink (Medium)",
-      "price": 182
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/02/6-pc-Chicken-McNuggets-with-drink.webp",
+        "name": "6-pc Chicken McNuggets with drink (Medium)",
+        "price": "₱182"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/02/6-pc-Chicken-McNuggets-with-drink.webp",
-      "name": "6-pc Chicken McNuggets with drink (Large)",
-      "price": 187
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/02/6-pc-Chicken-McNuggets-with-drink.webp",
+        "name": "6-pc Chicken McNuggets with drink (Large)",
+        "price": "₱187"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/01/1-pc-Mushroom-Pepper-Drink-Fries-Meal.webp",
-      "name": "1-pc Mushroom Pepper Drink & Fries Meal (Small)",
-      "price": 133
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/01/1-pc-Mushroom-Pepper-Drink-Fries-Meal.webp",
+        "name": "1-pc Mushroom Pepper Drink & Fries Meal (Small)",
+        "price": "₱133"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/01/1-pc-Mushroom-Pepper-Drink-Fries-Meal.webp",
-      "name": "1-pc Mushroom Pepper Drink & Fries Meal (Medium)",
-      "price": 159
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/01/1-pc-Mushroom-Pepper-Drink-Fries-Meal.webp",
+        "name": "1-pc Mushroom Pepper Drink & Fries Meal (Medium)",
+        "price": "₱159"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/01/2-pc.-Mushroom-Pepper-Steak-Fries-Meal-1.webp",
-      "name": "2-pc. Mushroom Pepper Steak & Fries Meal (Small)",
-      "price": 175
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/01/2-pc.-Mushroom-Pepper-Steak-Fries-Meal-1.webp",
+        "name": "2-pc. Mushroom Pepper Steak & Fries Meal (Small)",
+        "price": "₱175"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/01/2-pc.-Mushroom-Pepper-Steak-Fries-Meal-1.webp",
-      "name": "2-pc. Mushroom Pepper Steak & Fries Meal (Medium)",
-      "price": 205
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/01/2-pc.-Mushroom-Pepper-Steak-Fries-Meal-1.webp",
+        "name": "2-pc. Mushroom Pepper Steak & Fries Meal (Medium)",
+        "price": "₱205"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/01/2-pc.-Mushroom-Pepper-Steak-Fries-Meal-1.webp",
-      "name": "2-pc. Mushroom Pepper Steak & Fries Meal (Large)",
-      "price": 231
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/01/2-pc.-Mushroom-Pepper-Steak-Fries-Meal-1.webp",
+        "name": "2-pc. Mushroom Pepper Steak & Fries Meal (Large)",
+        "price": "₱231"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/01/1-pc.-Mushroom-pepper-Steak-Rice-bowl-solo.webp",
-      "name": "1-pc.-Mushroom-pepper-Steak-Rice-bowl",
-      "price": 87
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/01/1-pc.-Mushroom-pepper-Steak-Rice-bowl-solo.webp",
+        "name": "1-pc.-Mushroom-pepper-Steak-Rice-bowl",
+        "price": "₱87"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/01/2-pc.-Mushroom-pepper-Steak-Rice-bowl-solo.webp",
-      "name": "2-pc. Mushroom pepper Steak Rice bowl",
-      "price": 120
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/01/2-pc.-Mushroom-pepper-Steak-Rice-bowl-solo.webp",
+        "name": "2-pc. Mushroom pepper Steak Rice bowl",
+        "price": "₱120"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/1-pc.-Chicken-McDo-Happy-Meal-1.webp",
-      "name": "1-pc. Chicken McDo Happy Meal",
-      "price": 195
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/1-pc.-Chicken-McDo-Happy-Meal-1.webp",
+        "name": "1-pc. Chicken McDo Happy Meal",
+        "price": "₱ 195"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/4-pc.-Chicken-McNuggets-Happy-Meal-1.webp",
-      "name": "4-pc Chicken McNuggets Happy Meal",
-      "price": 155
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/4-pc.-Chicken-McNuggets-Happy-Meal-1.webp",
+        "name": "4-pc Chicken McNuggets Happy Meal",
+        "price": "₱ 155"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McSpaghetti-Happy-Meal-1.webp",
-      "name": "McDo McSpaghatti Happy Meal",
-      "price": 147
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McSpaghetti-Happy-Meal-1.webp",
+        "name": "McDo McSpaghatti Happy Meal",
+        "price": "₱ 147"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Burger-McDo-with-Fries-Happy-Meal-1.webp",
-      "name": "Burger McDo W/ Fries Happy Meal",
-      "price": 146
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Burger-McDo-with-Fries-Happy-Meal-1.webp",
+        "name": "Burger McDo W/ Fries Happy Meal",
+        "price": "₱ 146"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Cheesy-Burger-McDo-with-fries-Happy-Meal-1.webp",
-      "name": "Cheesy Burger McDo with fries Happy Meal",
-      "price": 145
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Cheesy-Burger-McDo-with-fries-Happy-Meal-1.webp",
+        "name": "Cheesy Burger McDo with fries Happy Meal",
+        "price": "₱ 145"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/2-pc-hot-cake-with-fries-happy-meal-1.webp",
-      "name": "2-pc Hotcake with fries Happy Meal",
-      "price": 168
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/2-pc-hot-cake-with-fries-happy-meal-1.webp",
+        "name": "2-pc Hotcake with fries Happy Meal",
+        "price": "₱ 168"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Spicy-McWings-and-PeaChee-Fruit-Fizz.webp",
-      "name": "Spicy McWings and PeaChee Fruit Fizz Barkada Bundle",
-      "price": 762
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Spicy-McWings-and-PeaChee-Fruit-Fizz.webp",
+        "name": "Spicy McWings and PeaChee Fruit Fizz Barkada Bundle",
+        "price": "₱ 762"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/McShare-Bundle-for-3.webp",
-      "name": "McShare Bundle for 3",
-      "price": 612
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/McShare-Bundle-for-3.webp",
+        "name": "McShare Bundle for 3",
+        "price": "₱ 612"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/6-pc-Chicken-McShare-Box.webp",
-      "name": "6 pc Chicken McShare Box",
-      "price": 505
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/6-pc-Chicken-McShare-Box.webp",
+        "name": "6 pc Chicken McShare Box",
+        "price": "₱ 505"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/8-pc-Chicken-McShare-Box.webp",
-      "name": "8 pc Chicken McShare Box",
-      "price": 665
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/8-pc-Chicken-McShare-Box.webp",
+        "name": "8 pc Chicken McShare Box",
+        "price": "₱ 665"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/20-pc-Chicken-McNuggets.webp",
-      "name": "20 pc Chicken McNuggets",
-      "price": 350
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/20-pc-Chicken-McNuggets.webp",
+        "name": "20 pc Chicken McNuggets",
+        "price": "₱ 350"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/BFF-Shake-Shake-Fries-BBQ.webp",
-      "name": "BFF Shake Shake Fries BBQ N\u2019 McFloat Combo",
-      "price": 284
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/BFF-Shake-Shake-Fries-BBQ.webp",
+        "name": "BFF Shake Shake Fries BBQ N’ McFloat Combo",
+        "price": "₱ 284"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/BFF-Shake-Shake-Fries-Cheese-N-McFloat-Combo.webp",
-      "name": "BFF Shake Shake Fries Cheese N\u2019 McFloat Combo",
-      "price": 284
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/BFF-Shake-Shake-Fries-Cheese-N-McFloat-Combo.webp",
+        "name": "BFF Shake Shake Fries Cheese N’ McFloat Combo",
+        "price": "₱ 284"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/BFF-Fries-N-McFloat-Combo-2.webp",
-      "name": "BFF Fries N\u2019 McFloat Combo",
-      "price": 282
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/BFF-Fries-N-McFloat-Combo-2.webp",
+        "name": "BFF Fries N’ McFloat Combo",
+        "price": "₱ 282"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/10-pc-Chicken-McNuggets.webp",
-      "name": "10-pc Chicken McNuggets",
-      "price": 175
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/10-pc-Chicken-McNuggets.webp",
+        "name": "10-pc Chicken McNuggets",
+        "price": "₱ 175"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Snack-Burger-McShare.webp",
-      "name": "Snack Burger McShare",
-      "price": 380
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/Snack-Burger-McShare.webp",
+        "name": "Snack Burger McShare",
+        "price": "₱ 380"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/McSpaghetti-Platter.webp",
-      "name": "McSpaghetti Platter",
-      "price": 259
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/McSpaghetti-Platter.webp",
+        "name": "McSpaghetti Platter",
+        "price": "₱ 259"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/McShare-Bundle-for-4-1.webp",
-      "name": "McShare Bundle for 4",
-      "price": 842
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/McShare-Bundle-for-4-1.webp",
+        "name": "McShare Bundle for 4",
+        "price": "₱ 842"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/12pc-Spicy-McWings.webp",
-      "name": "12-pc Spicy McWings",
-      "price": 515
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/06/12pc-Spicy-McWings.webp",
+        "name": "12-pc Spicy McWings",
+        "price": "₱ 515"
     }
-  ]
-}
+]

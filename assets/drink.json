@@ -1,249 +1,242 @@
-{
-  "drink": [
+[
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Orange-Juice.webp",
-      "name": "Orange Juice at McDonald\u2019s Menu",
-      "price": 84
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Orange-Juice.webp",
+        "name": "Orange Juice at McDonald’s Menu",
+        "price": "₱ 84"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/apple-Juice.webp",
-      "name": "Apple Juice Drink (Small)",
-      "price": 74
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/apple-Juice.webp",
+        "name": "Apple Juice Drink (Small)",
+        "price": "₱74"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/apple-Juice.webp",
-      "name": "Apple Juice Drink (Medium)",
-      "price": 84
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/apple-Juice.webp",
+        "name": "Apple Juice Drink (Medium)",
+        "price": "₱84"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/apple-Juice.webp",
-      "name": "Apple Juice Drink (Large)",
-      "price": 94
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/apple-Juice.webp",
+        "name": "Apple Juice Drink (Large)",
+        "price": "₱94"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Coke-McFloat.webp",
-      "name": "Coke McFloat (Small)",
-      "price": 59
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Coke-McFloat.webp",
+        "name": "Coke McFloat (Small)",
+        "price": "₱59"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Coke-McFloat.webp",
-      "name": "Coke McFloat (Medium)",
-      "price": 81
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Coke-McFloat.webp",
+        "name": "Coke McFloat (Medium)",
+        "price": "₱81"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Spirit.webp",
-      "name": "Spirit Solo",
-      "price": 77
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Spirit.webp",
+        "name": "Spirit Solo",
+        "price": "₱ 77"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Mango-passion-fizz.webp",
-      "name": "Mango passion Fizz (Small)",
-      "price": 71
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Mango-passion-fizz.webp",
+        "name": "Mango passion Fizz (Small)",
+        "price": "₱71"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Mango-passion-fizz.webp",
-      "name": "Mango passion Fizz (Medium)",
-      "price": 81
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Mango-passion-fizz.webp",
+        "name": "Mango passion Fizz (Medium)",
+        "price": "₱81"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Mango-passion-fizz.webp",
-      "name": "Mango passion Fizz (Large)",
-      "price": 91
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Mango-passion-fizz.webp",
+        "name": "Mango passion Fizz (Large)",
+        "price": "₱91"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/coke-zero-sugar.webp",
-      "name": "Coke Zero Sugar",
-      "price": 77
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/coke-zero-sugar.webp",
+        "name": "Coke Zero Sugar",
+        "price": "₱ 77"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Liptin-Iced-Tea.webp",
-      "name": "Lipton Iced Tea McDo Menu",
-      "price": 84
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Liptin-Iced-Tea.webp",
+        "name": "Lipton Iced Tea McDo Menu",
+        "price": "₱ 84"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Mccaffe-Coffe-float.webp",
-      "name": "McCafe Coffe McFloat (Small)",
-      "price": 79
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Mccaffe-Coffe-float.webp",
+        "name": "McCafe Coffe McFloat (Small)",
+        "price": "₱ 79"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Mccaffe-Coffe-float.webp",
-      "name": "McCafe Coffe McFloat (Medium)",
-      "price": 100
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Mccaffe-Coffe-float.webp",
+        "name": "McCafe Coffe McFloat (Medium)",
+        "price": "₱100"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Mccafe-iced-coffe-orignal.webp",
-      "name": "McCafe Iced Coffe Orignal (Small)",
-      "price": 53
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Mccafe-iced-coffe-orignal.webp",
+        "name": "McCafe Iced Coffe Orignal (Small)",
+        "price": "₱ 53"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Mccafe-iced-coffe-orignal.webp",
-      "name": "McCafe Iced Coffe Orignal (Medium)",
-      "price": 79
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Mccafe-iced-coffe-orignal.webp",
+        "name": "McCafe Iced Coffe Orignal (Medium)",
+        "price": "₱ 79"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Mccafe-iced-Coffi-chocolate.webp",
-      "name": "McCafe Iced Coffe Chocolate (Small)",
-      "price": 72
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Mccafe-iced-Coffi-chocolate.webp",
+        "name": "McCafe Iced Coffe Chocolate (Small)",
+        "price": "₱ 72"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Mccafe-iced-Coffi-chocolate.webp",
-      "name": "McCafe Iced Coffe Chocolate (Medium)",
-      "price": 92
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Mccafe-iced-Coffi-chocolate.webp",
+        "name": "McCafe Iced Coffe Chocolate (Medium)",
+        "price": "₱92"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Mccaffe-iced-coffe-black.webp",
-      "name": "McCafe Iced Coffe Black (Small)",
-      "price": 53
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Mccaffe-iced-coffe-black.webp",
+        "name": "McCafe Iced Coffe Black (Small)",
+        "price": "₱53"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Mccaffe-iced-coffe-black.webp",
-      "name": "McCafe Iced Coffe Black (Medium)",
-      "price": 76
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/Mccaffe-iced-coffe-black.webp",
+        "name": "McCafe Iced Coffe Black (Medium)",
+        "price": "₱76"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Premium-Roast.webp",
-      "name": "McCafe Premium Roast (Small)",
-      "price": 53
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Premium-Roast.webp",
+        "name": "McCafe Premium Roast (Small)",
+        "price": "₱ 53"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Premium-Roast.webp",
-      "name": "McCafe Premium Roast (Medium)",
-      "price": 69
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Premium-Roast.webp",
+        "name": "McCafe Premium Roast (Medium)",
+        "price": "₱69"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Americano.webp",
-      "name": "McCafe Americano (Small)",
-      "price": 88
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Americano.webp",
+        "name": "McCafé Americano (Small)",
+        "price": "₱ 88"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Americano.webp",
-      "name": "McCafe Americano (Medium)",
-      "price": 104
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Americano.webp",
+        "name": "McCafé Americano (Medium)",
+        "price": "₱104"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Cafe-Latte.webp",
-      "name": "McCafe Hot Latte (Small)",
-      "price": 99
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Cafe-Latte.webp",
+        "name": "McCafé Hot Latte (Small)",
+        "price": "₱99"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Cafe-Latte.webp",
-      "name": "McCafe Hot Latte (Medium)",
-      "price": 115
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Cafe-Latte.webp",
+        "name": "McCafé Hot Latte (Medium)",
+        "price": "₱115"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Espresso.webp",
-      "name": "McCafe Espresso (Small)",
-      "price": 80
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Espresso.webp",
+        "name": "McCafé Espresso (Small)",
+        "price": "₱80"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Espresso.webp",
-      "name": "McCafe Espresso (Medium)",
-      "price": 190
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Espresso.webp",
+        "name": "McCafé Espresso (Medium)",
+        "price": "₱190"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Espresso.webp",
-      "name": "McCafe Espresso (Large)",
-      "price": 201
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Macchiato.webp",
+        "name": "McCafé Mochaccino  (Small)",
+        "price": "₱ 104"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Macchiato.webp",
-      "name": "McCafe Mochaccino  (Small)",
-      "price": 104
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Macchiato.webp",
+        "name": "McCafé Mochaccino  (Medium)",
+        "price": "₱120"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Macchiato.webp",
-      "name": "McCafe Mochaccino  (Medium)",
-      "price": 120
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Premium-Hot-Chocolate.webp",
+        "name": "McCafé Premium Hot Chocolate (Small)",
+        "price": "₱ 130"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Premium-Hot-Chocolate.webp",
-      "name": "McCafe Premium Hot Chocolate (Small)",
-      "price": 130
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Premium-Hot-Chocolate.webp",
+        "name": "McCafé Premium Hot Chocolate (Medium)",
+        "price": "₱145"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Premium-Hot-Chocolate.webp",
-      "name": "McCafe Premium Hot Chocolate (Medium)",
-      "price": 145
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Iced-Mocha.webp",
+        "name": "McCafé Iced Mocha (Small)",
+        "price": "₱ 115"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Iced-Mocha.webp",
-      "name": "McCafe Iced Mocha (Small)",
-      "price": 115
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Iced-Mocha.webp",
+        "name": "McCafé Iced Mocha (Medium)",
+        "price": "₱131"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Iced-Mocha.webp",
-      "name": "McCafe Iced Mocha (Medium)",
-      "price": 131
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Iced-Latte.webp",
+        "name": "McCafé Iced Latte (Small)",
+        "price": "₱ 115"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Iced-Latte.webp",
-      "name": "McCafe Iced Latte (Small)",
-      "price": 115
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Iced-Latte.webp",
+        "name": "McCafé Iced Latte (Medium)",
+        "price": "₱131"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Iced-Latte.webp",
-      "name": "McCafe Iced Latte (Medium)",
-      "price": 131
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Iced-Double-Choco-Frappeo.webp",
+        "name": "McCafé Iced Americano  (Small)",
+        "price": "₱110"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Iced-Double-Choco-Frappeo.webp",
-      "name": "McCafe Iced Americano  (Small)",
-      "price": 110
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Iced-Double-Choco-Frappeo.webp",
+        "name": "McCafé Iced Americano  (Medium)",
+        "price": "₱126"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Iced-Double-Choco-Frappeo.webp",
-      "name": "McCafe Iced Americano  (Medium)",
-      "price": 126
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Caramel-Frappe.webp",
+        "name": "McCafé Caramel Frappe (Small)",
+        "price": "₱126"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Caramel-Frappe.webp",
-      "name": "McCafe Caramel Frappe (Small)",
-      "price": 126
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Caramel-Frappe.webp",
+        "name": "McCafé Caramel Frappe (Medium)",
+        "price": "₱144"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Caramel-Frappe.webp",
-      "name": "McCafe Caramel Frappe (Medium)",
-      "price": 144
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Mocha-Frappe.webp",
+        "name": "McCafé Iced Mocha  (Small)",
+        "price": "₱126"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Mocha-Frappe.webp",
-      "name": "McCafe Iced Mocha  (Small)",
-      "price": 126
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Mocha-Frappe.webp",
+        "name": "McCafé Iced Mocha  (Medium)",
+        "price": "₱142"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Mocha-Frappe.webp",
-      "name": "McCafe Iced Mocha  (Medium)",
-      "price": 142
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Latte-Frappe.webp",
+        "name": "McCafé Latte Frappe (Small)",
+        "price": "₱ 128"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Latte-Frappe.webp",
-      "name": "McCafe Latte Frappe (Small)",
-      "price": 128
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Latte-Frappe.webp",
+        "name": "McCafé Latte Frappe (Medium)",
+        "price": "₱144"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Latte-Frappe.webp",
-      "name": "McCafe Latte Frappe (Medium)",
-      "price": 144
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Strawberry-Smoothie.webp",
+        "name": "McCafé Strawberry Smoothie (Small)",
+        "price": "₱ 120"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Strawberry-Smoothie.webp",
-      "name": "McCafe Strawberry Smoothie (Small)",
-      "price": 120
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Strawberry-Smoothie.webp",
+        "name": "McCafé Strawberry Smoothie (Medium)",
+        "price": "₱130"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2024/11/McCafe-Strawberry-Smoothie.webp",
-      "name": "McCafe Strawberry Smoothie (Medium)",
-      "price": 130
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/01/Mcdo-McCafe-Cappuccino.webp",
+        "name": "McCafé Cappuccino (Small)",
+        "price": "₱99"
     },
     {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/01/Mcdo-McCafe-Cappuccino.webp",
-      "name": "McCafe Cappuccino (Small)",
-      "price": 99
-    },
-    {
-      "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/01/Mcdo-McCafe-Cappuccino.webp",
-      "name": "McCafe Cappuccino (Medium)",
-      "price": 115
+        "imageUrl": "https://mcdomenu.ph/wp-content/uploads/2025/01/Mcdo-McCafe-Cappuccino.webp",
+        "name": "McCafé Cappuccino (Medium)",
+        "price": "₱115"
     }
-  ]
-}
+]
