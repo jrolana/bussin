@@ -1,4 +1,5 @@
 import 'package:bussin/model/item.dart';
+import 'package:bussin/services/database_service.dart';
 import 'package:flutter/material.dart';
 
 class Receipt extends StatefulWidget {
@@ -231,6 +232,21 @@ class _ReceiptState extends State<Receipt> with SingleTickerProviderStateMixin {
                           ),
                         ),
                       ),
+
+                      // const SizedBox(height: 15),
+                      // ElevatedButton(
+                      //   onPressed: () async {
+                      //     await DatabaseService.insertFavorite(widget.items);
+                      //   },
+                      //   child: Row(
+                      //     mainAxisAlignment: MainAxisAlignment.center,
+                      //     spacing: 4,
+                      //     children: [
+                      //       Icon(Icons.favorite, color: Colors.pink),
+                      //       Text("Add to favorites"),
+                      //     ],
+                      //   ),
+                      // ),
                     ],
                   ),
                 ),

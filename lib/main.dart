@@ -71,7 +71,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: SingleChildScrollView(
         controller: _scrollController,
         child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+          padding: const EdgeInsets.fromLTRB(8, 40, 8, 16),
           child: Column(
             spacing: 25,
             children: [
@@ -132,6 +132,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       onPressed: () {
                         setState(() {
                           mode = !mode;
+                          isDone = false;
                         });
                       },
                       style: ElevatedButton.styleFrom(

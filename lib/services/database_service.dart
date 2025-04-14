@@ -71,7 +71,7 @@ class DatabaseService {
     );
   }
 
-  Future<int> insertFavorite(List<Item> items, {Database? db}) async {
+  static Future<int> insertFavorite(List<Item> items, {Database? db}) async {
     db ??= await instance.db;
     return await db.insert("favorites", {
       "order": jsonEncode(items),
