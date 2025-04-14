@@ -1,6 +1,7 @@
 import 'package:bussin/model/item.dart';
 import 'package:bussin/widgets/one_slot_machine.dart';
 import 'package:bussin/widgets/receipt.dart';
+import 'package:bussin/widgets/saved_order.dart';
 import 'package:bussin/widgets/three_slots_machine.dart';
 import 'services/database_service.dart';
 import 'package:flutter/material.dart';
@@ -70,7 +71,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: SingleChildScrollView(
         controller: _scrollController,
         child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+          padding: const EdgeInsets.fromLTRB(8, 40, 8, 16),
           child: Column(
             spacing: 25,
             children: [
@@ -131,6 +132,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       onPressed: () {
                         setState(() {
                           mode = !mode;
+                          isDone = false;
                         });
                       },
                       style: ElevatedButton.styleFrom(
@@ -267,7 +269,6 @@ class _MyHomePageState extends State<MyHomePage> {
               isDone
                   ? Container(key: _receiptKey, child: Receipt(items: items))
                   : SizedBox(),
-                
             ],
           ),
         ),

@@ -3,7 +3,6 @@ import 'package:bussin/model/item.dart';
 import 'package:bussin/services/mcrandomizer_service.dart';
 import 'package:bussin/widgets/single_slot_roller.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_glow/flutter_glow.dart';
 
 const mainColor = Color(0xFFFF0000);
 const sideColor = Color(0xFFFFC107);
@@ -55,18 +54,20 @@ class ThreeSlotsMachineState extends State<ThreeSlotsMachine> {
   Future<void> rollSlots() async {
     try {
       setState(() {
+        int localCount = 3;
         if (chooseMain) {
           items[0] = null;
-          count -= 1;
+          localCount -= 1;
         }
         if (chooseSide) {
           items[1] = null;
-          count -= 1;
+          localCount -= 1;
         }
         if (chooseDrink) {
           items[2] = null;
-          count -= 1;
+          localCount -= 1;
         }
+        count = localCount;
       });
 
       double currMaxPrice = widget.maxPrice;
@@ -108,8 +109,9 @@ class ThreeSlotsMachineState extends State<ThreeSlotsMachine> {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(color: Colors.white),
-      padding: EdgeInsets.fromLTRB(0, 0, 0, 20),
+      padding: EdgeInsets.fromLTRB(0, 0, 0, 25),
       child: Column(
+        spacing: 30,
         children: [
           Container(
             height: widget.itemSize * 3,
@@ -142,7 +144,7 @@ class ThreeSlotsMachineState extends State<ThreeSlotsMachine> {
                 Align(
                   alignment: Alignment.topCenter,
                   child: Container(
-                    height: widget.itemSize * 0.7,
+                    height: widget.itemSize * 2,
                     decoration: BoxDecoration(
                       gradient: LinearGradient(
                         begin: Alignment.topCenter,
@@ -172,25 +174,6 @@ class ThreeSlotsMachineState extends State<ThreeSlotsMachine> {
                     ),
                   ),
                 ),
-
-                // Selection indicator (center line)
-                Center(
-                  child: Container(
-                    height: widget.itemSize,
-                    decoration: BoxDecoration(
-                      border: Border(
-                        top: BorderSide(
-                          color: Colors.red.withValues(alpha: 0.6),
-                          width: 2,
-                        ),
-                        bottom: BorderSide(
-                          color: Colors.red.withValues(alpha: 0.6),
-                          width: 2,
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
               ],
             ),
           ),
@@ -199,31 +182,61 @@ class ThreeSlotsMachineState extends State<ThreeSlotsMachine> {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
 
             children: [
-              GlowButton(
+              TextButton(
                 onPressed: () {
                   setState(() {
                     chooseMain = !chooseMain;
                   });
                 },
-                color: chooseMain ? mainColor : disabledColor,
+                style: ButtonStyle(
+                  backgroundColor: WidgetStateProperty.all(
+                    chooseMain ? mainColor : disabledColor,
+                  ),
+                  shape: WidgetStateProperty.all(
+                    ContinuousRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                  ),
+                  minimumSize: WidgetStateProperty.all(Size(75, 40)),
+                ),
                 child: Text('Main', style: TextStyle(color: Colors.white)),
               ),
-              GlowButton(
+              TextButton(
                 onPressed: () {
                   setState(() {
                     chooseSide = !chooseSide;
                   });
                 },
-                color: chooseSide ? sideColor : disabledColor,
+                style: ButtonStyle(
+                  backgroundColor: WidgetStateProperty.all(
+                    chooseSide ? sideColor : disabledColor,
+                  ),
+                  shape: WidgetStateProperty.all(
+                    ContinuousRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                  ),
+                  minimumSize: WidgetStateProperty.all(Size(75, 40)),
+                ),
                 child: Text('Side', style: TextStyle(color: Colors.white)),
               ),
-              GlowButton(
+              TextButton(
                 onPressed: () {
                   setState(() {
                     chooseDrink = !chooseDrink;
                   });
                 },
-                color: chooseDrink ? drinkColor : disabledColor,
+                style: ButtonStyle(
+                  backgroundColor: WidgetStateProperty.all(
+                    chooseDrink ? drinkColor : disabledColor,
+                  ),
+                  shape: WidgetStateProperty.all(
+                    ContinuousRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                  ),
+                  minimumSize: WidgetStateProperty.all(Size(75, 40)),
+                ),
                 child: Text('Drink', style: TextStyle(color: Colors.white)),
               ),
             ],

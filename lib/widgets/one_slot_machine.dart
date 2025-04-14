@@ -53,6 +53,7 @@ class OneSlotMachineState extends State<OneSlotMachine> {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(color: Colors.white),
+      padding: EdgeInsets.fromLTRB(0, 0, 0, 48),
       child: Column(
         children: [
           Container(
@@ -76,7 +77,7 @@ class OneSlotMachineState extends State<OneSlotMachine> {
                 Align(
                   alignment: Alignment.topCenter,
                   child: Container(
-                    height: widget.itemSize * 0.7,
+                    height: widget.itemSize * 2,
                     decoration: BoxDecoration(
                       gradient: LinearGradient(
                         begin: Alignment.topCenter,
@@ -103,25 +104,6 @@ class OneSlotMachineState extends State<OneSlotMachine> {
                           Colors.white,
                           Colors.white.withValues(alpha: 0.0),
                         ],
-                      ),
-                    ),
-                  ),
-                ),
-
-                // Selection indicator (center line)
-                Center(
-                  child: Container(
-                    height: widget.itemSize,
-                    decoration: BoxDecoration(
-                      border: Border(
-                        top: BorderSide(
-                          color: Colors.red.withValues(alpha: 0.6),
-                          width: 2,
-                        ),
-                        bottom: BorderSide(
-                          color: Colors.red.withValues(alpha: 0.6),
-                          width: 2,
-                        ),
                       ),
                     ),
                   ),
