@@ -1,6 +1,7 @@
 import 'package:bussin/model/item.dart';
 import 'package:bussin/widgets/one_slot_machine.dart';
 import 'package:bussin/widgets/receipt.dart';
+import 'package:bussin/widgets/saved_order.dart';
 import 'package:bussin/widgets/three_slots_machine.dart';
 import 'services/database_service.dart';
 import 'package:flutter/material.dart';
@@ -242,7 +243,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   )
                   : SizedBox(),
 
-              isDone ? McDoReceipt(items: items) : SizedBox(),
+              isDone ? SavedOrder(items: items) : SizedBox(),
             ],
           ),
         ),

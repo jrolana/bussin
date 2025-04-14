@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'json_service.dart';
 import 'package:bussin/model/item.dart';
 
@@ -26,7 +28,7 @@ class DatabaseService {
 
     return await openDatabase(
       path,
-      version: 1,
+      version: 2,
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
     );
@@ -46,7 +48,7 @@ class DatabaseService {
       'CREATE TABLE meal(id INTEGER PRIMARY KEY, name TEXT NOT NULL, price FLOAT NOT NULL, imageUrl TEXT NOT NULL)',
     );
     await db.execute(
-      'CREATE TABLE favorites(id INTEGER PRIMARY KEY, name TEXT NOT NULL, price FLOAT NOT NULL, imageUrl TEXT NOT NULL)',
+      'CREATE TABLE favorites(id INTEGER PRIMARY KEY AUTOINCREMENT, favorite TEXT NOT NULL)',
     );
     await instance.initializeItems(db);
   }
@@ -56,6 +58,7 @@ class DatabaseService {
     await db.execute('DROP TABLE IF EXISTS side');
     await db.execute('DROP TABLE IF EXISTS drink');
     await db.execute('DROP TABLE IF EXISTS meal');
+    await db.execute('DROP TABLE IF EXISTS favorites');
     await _onCreate(db, newVersion);
   }
 
@@ -66,6 +69,18 @@ class DatabaseService {
       item.toMap(),
       conflictAlgorithm: ConflictAlgorithm.replace,
     );
+  }
+
+  Future<int> insertFavorite(List<Item> items, {Database? db}) async {
+    db ??= await instance.db;
+    return await db.insert("favorites", {
+      "order": jsonEncode(items),
+    }, conflictAlgorithm: ConflictAlgorithm.replace);
+  }
+
+  Future<void> removeFavorite(int id) async {
+    Database db = await instance.db;
+    await db.delete("favorite", where: 'id = ?', whereArgs: [id]);
   }
 
   Future<int> updateItem(Item item, String table, {Database? db}) async {
