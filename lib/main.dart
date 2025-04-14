@@ -41,6 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
   // True == three
   // False == one
   bool mode = true;
+  double maxPrice = double.maxFinite;
 
   @override
   Widget build(BuildContext context) {
@@ -49,25 +50,43 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: Padding(
-        padding: EdgeInsets.all(15),
-        child: LayoutBuilder(
-          builder: (context, constraints) {
-            if (mode) {
-              return ThreeSlotsMachine.ThreeSlotsMachine(
-                key: threeSlotsMachine,
-                itemSize: constraints.maxWidth / 3,
-                maxPrice: 200,
-              );
-            } else {
-              return OneSlotMachine.OneSlotMachine(
-                key: oneSlotMachine,
-                itemSize: constraints.maxWidth / 3,
-                maxPrice: 200,
-              );
-            }
-          },
-        ),
+      body: Column(
+        spacing: 50,
+        children: [
+          Padding(
+            padding: EdgeInsets.all(15),
+            child: LayoutBuilder(
+              builder: (context, constraints) {
+                if (mode) {
+                  return ThreeSlotsMachine.ThreeSlotsMachine(
+                    key: threeSlotsMachine,
+                    itemSize: constraints.maxWidth / 3,
+                    maxPrice: maxPrice,
+                  );
+                } else {
+                  return OneSlotMachine.OneSlotMachine(
+                    key: oneSlotMachine,
+                    itemSize: constraints.maxWidth / 3,
+                    maxPrice: maxPrice,
+                  );
+                }
+              },
+            ),
+          ),
+
+          TextField(
+            decoration: InputDecoration(
+              border: OutlineInputBorder(),
+              hintText: 'Enter budget',
+            ),
+            keyboardType: TextInputType.number,
+            onChanged: (value) {
+              setState(() {
+                maxPrice = double.tryParse(value) ?? double.maxFinite;
+              });
+            },
+          ),
+        ],
       ),
       floatingActionButton: Row(
         mainAxisAlignment: MainAxisAlignment.end,
