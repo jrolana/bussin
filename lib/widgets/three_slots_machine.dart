@@ -3,6 +3,12 @@ import 'package:bussin/model/item.dart';
 import 'package:bussin/services/mcrandomizer_service.dart';
 import 'package:bussin/widgets/single_slot_roller.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_glow/flutter_glow.dart';
+
+const mainColor = Color(0xFFFF0000);
+const sideColor = Color(0xFFFFC107);
+const drinkColor = Color(0xFF40D0FD);
+const disabledColor = Color(0xFFB0B0B0);
 
 class ThreeSlotsMachine extends StatefulWidget {
   final double itemSize;
@@ -24,10 +30,9 @@ class ThreeSlotsMachineState extends State<ThreeSlotsMachine> {
   final mainSlot = GlobalKey<SlotRollerState>();
   final sideSlot = GlobalKey<SlotRollerState>();
   final drinkSlot = GlobalKey<SlotRollerState>();
+  bool chooseMain = true, chooseSide = true, chooseDrink = true;
 
   Future<void> rollSlots() async {
-    bool chooseMain = true, chooseSide = true, chooseDrink = true;
-
     try {
       setState(() {
         if (chooseMain) {
@@ -78,90 +83,127 @@ class ThreeSlotsMachineState extends State<ThreeSlotsMachine> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Container(
-          height: widget.itemSize * 3,
-          decoration: BoxDecoration(color: Colors.white),
-          clipBehavior: Clip.antiAlias,
-          child: Stack(
+    return Container(
+      decoration: BoxDecoration(color: Colors.white),
+      padding: EdgeInsets.fromLTRB(0, 0, 0, 20),
+      child: Column(
+        children: [
+          Container(
+            height: widget.itemSize * 3,
+            decoration: BoxDecoration(),
+            clipBehavior: Clip.antiAlias,
+            child: Stack(
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    SlotRoller.SlotRoller(
+                      key: mainSlot,
+                      itemSize: widget.itemSize,
+                    ),
+                    SlotRoller.SlotRoller(
+                      key: sideSlot,
+                      itemSize: widget.itemSize,
+                    ),
+                    SlotRoller.SlotRoller(
+                      key: drinkSlot,
+                      itemSize: widget.itemSize,
+                    ),
+                  ],
+                ),
+
+                // Fade effect
+                Align(
+                  alignment: Alignment.topCenter,
+                  child: Container(
+                    height: widget.itemSize * 0.7,
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                        colors: [
+                          Colors.white,
+                          Colors.white.withValues(alpha: 0.0),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+
+                Align(
+                  alignment: Alignment.bottomCenter,
+                  child: Container(
+                    height: widget.itemSize * 0.7,
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        begin: Alignment.bottomCenter,
+                        end: Alignment.topCenter,
+                        colors: [
+                          Colors.white,
+                          Colors.white.withValues(alpha: 0.0),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+
+                // Selection indicator (center line)
+                Center(
+                  child: Container(
+                    height: widget.itemSize,
+                    decoration: BoxDecoration(
+                      border: Border(
+                        top: BorderSide(
+                          color: Colors.red.withValues(alpha: 0.6),
+                          width: 2,
+                        ),
+                        bottom: BorderSide(
+                          color: Colors.red.withValues(alpha: 0.6),
+                          width: 2,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+
             children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  SlotRoller.SlotRoller(
-                    key: mainSlot,
-                    itemSize: widget.itemSize,
-                  ),
-                  SlotRoller.SlotRoller(
-                    key: sideSlot,
-                    itemSize: widget.itemSize,
-                  ),
-                  SlotRoller.SlotRoller(
-                    key: drinkSlot,
-                    itemSize: widget.itemSize,
-                  ),
-                ],
+              GlowButton(
+                onPressed: () {
+                  setState(() {
+                    chooseMain = !chooseMain;
+                  });
+                },
+                color: chooseMain ? mainColor : disabledColor,
+                child: Text('Main', style: TextStyle(color: Colors.white)),
               ),
-
-              Align(
-                alignment: Alignment.topCenter,
-                child: Container(
-                  height: widget.itemSize * 0.7,
-                  decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                      colors: [Colors.white, Colors.white.withOpacity(0.0)],
-                    ),
-                  ),
-                ),
+              GlowButton(
+                onPressed: () {
+                  setState(() {
+                    chooseSide = !chooseSide;
+                  });
+                },
+                color: chooseSide ? sideColor : disabledColor,
+                child: Text('Side', style: TextStyle(color: Colors.white)),
               ),
-
-              // Bottom fade effect
-              Align(
-                alignment: Alignment.bottomCenter,
-                child: Container(
-                  height: widget.itemSize * 0.7,
-                  decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      begin: Alignment.bottomCenter,
-                      end: Alignment.topCenter,
-                      colors: [
-                        Colors.white,
-                        Colors.white.withValues(alpha: 0.0),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-
-              // Selection indicator (center line)
-              Center(
-                child: Container(
-                  height: widget.itemSize,
-                  decoration: BoxDecoration(
-                    border: Border(
-                      top: BorderSide(
-                        color: Colors.red.withValues(alpha: 0.6),
-                        width: 2,
-                      ),
-                      bottom: BorderSide(
-                        color: Colors.red.withValues(alpha: 0.6),
-                        width: 2,
-                      ),
-                    ),
-                  ),
-                ),
+              GlowButton(
+                onPressed: () {
+                  setState(() {
+                    chooseDrink = !chooseDrink;
+                  });
+                },
+                color: chooseDrink ? drinkColor : disabledColor,
+                child: Text('Drink', style: TextStyle(color: Colors.white)),
               ),
             ],
           ),
-        ),
-
-        for (Item? item in items)
-          if (item != null)
-            Row(children: [Text(item.name), Text(item.price.toString())]),
-      ],
+        ],
+      ),
     );
   }
 }

@@ -49,78 +49,81 @@ class OneSlotMachineState extends State<OneSlotMachine> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Container(
-          height: widget.itemSize * 3,
-          decoration: BoxDecoration(),
-          clipBehavior: Clip.antiAlias,
-          child: Stack(
-            children: [
-              Center(
-                child: SlotRoller.SlotRoller(
-                  key: mealSlot,
-                  itemSize: widget.itemSize,
-                ),
-              ),
-
-              Align(
-                alignment: Alignment.topCenter,
-                child: Container(
-                  height: widget.itemSize * 0.7,
-                  decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                      colors: [
-                        Colors.white,
-                        Colors.white.withValues(alpha: 0.0),
-                      ],
-                    ),
+    return Container(
+      decoration: BoxDecoration(color: Colors.white),
+      child: Column(
+        children: [
+          Container(
+            height: widget.itemSize * 3,
+            decoration: BoxDecoration(),
+            clipBehavior: Clip.antiAlias,
+            child: Stack(
+              children: [
+                Center(
+                  child: SlotRoller.SlotRoller(
+                    key: mealSlot,
+                    itemSize: widget.itemSize,
                   ),
                 ),
-              ),
 
-              // Bottom fade effect
-              Align(
-                alignment: Alignment.bottomCenter,
-                child: Container(
-                  height: widget.itemSize * 0.7,
-                  decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      begin: Alignment.bottomCenter,
-                      end: Alignment.topCenter,
-                      colors: [
-                        Colors.white,
-                        Colors.white.withValues(alpha: 0.0),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-
-              // Selection indicator (center line)
-              Center(
-                child: Container(
-                  height: widget.itemSize,
-                  decoration: BoxDecoration(
-                    border: Border(
-                      top: BorderSide(
-                        color: Colors.red.withValues(alpha: 0.6),
-                        width: 2,
-                      ),
-                      bottom: BorderSide(
-                        color: Colors.red.withValues(alpha: 0.6),
-                        width: 2,
+                Align(
+                  alignment: Alignment.topCenter,
+                  child: Container(
+                    height: widget.itemSize * 0.7,
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                        colors: [
+                          Colors.white,
+                          Colors.white.withValues(alpha: 0.0),
+                        ],
                       ),
                     ),
                   ),
                 ),
-              ),
-            ],
+
+                // Bottom fade effect
+                Align(
+                  alignment: Alignment.bottomCenter,
+                  child: Container(
+                    height: widget.itemSize * 0.7,
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        begin: Alignment.bottomCenter,
+                        end: Alignment.topCenter,
+                        colors: [
+                          Colors.white,
+                          Colors.white.withValues(alpha: 0.0),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+
+                // Selection indicator (center line)
+                Center(
+                  child: Container(
+                    height: widget.itemSize,
+                    decoration: BoxDecoration(
+                      border: Border(
+                        top: BorderSide(
+                          color: Colors.red.withValues(alpha: 0.6),
+                          width: 2,
+                        ),
+                        bottom: BorderSide(
+                          color: Colors.red.withValues(alpha: 0.6),
+                          width: 2,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
