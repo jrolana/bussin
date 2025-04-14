@@ -1,4 +1,6 @@
+import 'package:bussin/model/item.dart';
 import 'package:bussin/widgets/one_slot_machine.dart';
+import 'package:bussin/widgets/receipt.dart';
 import 'package:bussin/widgets/three_slots_machine.dart';
 import 'services/database_service.dart';
 import 'package:flutter/material.dart';
@@ -45,6 +47,8 @@ class _MyHomePageState extends State<MyHomePage> {
   bool mode = true;
   double maxPrice = double.maxFinite;
   final Color mcColor = Color(0xFFDA291C);
+  bool isDone = false;
+  late List<Item> items;
 
   @override
   Widget build(BuildContext context) {
@@ -76,6 +80,12 @@ class _MyHomePageState extends State<MyHomePage> {
                             key: threeSlotsMachine,
                             itemSize: constraints.maxWidth / 3,
                             maxPrice: maxPrice,
+                            onSpinEnd: (_items) {
+                              setState(() {
+                                isDone = true;
+                                items = _items;
+                              });
+                            },
                           );
                         } else {
                           return OneSlotMachine.OneSlotMachine(
@@ -140,6 +150,10 @@ class _MyHomePageState extends State<MyHomePage> {
 
                   ElevatedButton(
                     onPressed: () {
+                      setState(() {
+                        isDone = false;
+                      });
+
                       if (mode) {
                         threeSlotsMachine.currentState?.rollSlots();
                       } else {
@@ -227,6 +241,8 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   )
                   : SizedBox(),
+
+              isDone ? McDoReceipt(items: items) : SizedBox(),
             ],
           ),
         ),

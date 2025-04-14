@@ -13,11 +13,13 @@ const disabledColor = Color(0xFFB0B0B0);
 class ThreeSlotsMachine extends StatefulWidget {
   final double itemSize;
   final double maxPrice;
+  final void Function(List<Item> items)? onSpinEnd;
 
   const ThreeSlotsMachine.ThreeSlotsMachine({
     Key? key,
     required this.itemSize,
     required this.maxPrice,
+    this.onSpinEnd,
   }) : super(key: key);
 
   @override
@@ -31,18 +33,39 @@ class ThreeSlotsMachineState extends State<ThreeSlotsMachine> {
   final sideSlot = GlobalKey<SlotRollerState>();
   final drinkSlot = GlobalKey<SlotRollerState>();
   bool chooseMain = true, chooseSide = true, chooseDrink = true;
+  // if count == 3: done rolling
+  int count = 3;
+
+  void incrementCount() {
+    setState(() {
+      count += 1;
+
+      if (widget.onSpinEnd != null && count == 3) {
+        List<Item> notNullItem = [];
+        for (var item in items) {
+          if (item != null) {
+            notNullItem.add(item);
+          }
+        }
+        widget.onSpinEnd!(notNullItem);
+      }
+    });
+  }
 
   Future<void> rollSlots() async {
     try {
       setState(() {
         if (chooseMain) {
           items[0] = null;
+          count -= 1;
         }
         if (chooseSide) {
           items[1] = null;
+          count -= 1;
         }
         if (chooseDrink) {
           items[2] = null;
+          count -= 1;
         }
       });
 
@@ -100,14 +123,17 @@ class ThreeSlotsMachineState extends State<ThreeSlotsMachine> {
                     SlotRoller.SlotRoller(
                       key: mainSlot,
                       itemSize: widget.itemSize,
+                      onSpinEnd: incrementCount,
                     ),
                     SlotRoller.SlotRoller(
                       key: sideSlot,
                       itemSize: widget.itemSize,
+                      onSpinEnd: incrementCount,
                     ),
                     SlotRoller.SlotRoller(
                       key: drinkSlot,
                       itemSize: widget.itemSize,
+                      onSpinEnd: incrementCount,
                     ),
                   ],
                 ),
