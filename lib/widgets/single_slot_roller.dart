@@ -69,7 +69,7 @@ class SlotRollerState extends State<SlotRoller>
         controller: _scrollController,
         itemCount: 63,
         itemBuilder: (context, index) {
-          if (!_reversed ? index == 6 : index == 61 && _targetItem != null) {
+          if (_targetItem != null && (!_reversed ? index == 6 : index == 61)) {
             return Image.network(
               _targetItem!.imageUrl,
               width: widget.itemSize,
