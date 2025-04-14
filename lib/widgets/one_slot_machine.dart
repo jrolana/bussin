@@ -7,11 +7,13 @@ import 'package:flutter/material.dart';
 class OneSlotMachine extends StatefulWidget {
   final double itemSize;
   final double maxPrice;
+  final void Function(Item items)? onSpinEnd;
 
   OneSlotMachine.OneSlotMachine({
     Key? key,
     required this.itemSize,
     required this.maxPrice,
+    this.onSpinEnd,
   }) : super(key: key);
 
   @override
@@ -63,6 +65,11 @@ class OneSlotMachineState extends State<OneSlotMachine> {
                   child: SlotRoller.SlotRoller(
                     key: mealSlot,
                     itemSize: widget.itemSize,
+                    onSpinEnd: () {
+                      if (widget.onSpinEnd != null && item != null) {
+                        widget.onSpinEnd!(item!);
+                      }
+                    },
                   ),
                 ),
 
