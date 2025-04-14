@@ -49,9 +49,7 @@ Future<(Item?, Item?, Item?, Item?)> mcrandomizer({
   if (!main && !side && !drink) minNeed += minMeal;
 
   if (maxPrice != null && maxPrice < minNeed) {
-    throw NotEnoughMoneyException(
-      "Max price does not reach minimum needed money of $minNeed.",
-    );
+    throw NotEnoughMoneyException(minNeed - maxPrice);
   }
 
   Item? mainItem, sideItem, drinkItem, mealItem;
