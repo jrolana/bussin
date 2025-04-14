@@ -50,11 +50,25 @@ class _MyHomePageState extends State<MyHomePage> {
   bool isDone = false;
   late List<Item> items;
 
+  final ScrollController _scrollController = ScrollController();
+  final GlobalKey _receiptKey = GlobalKey();
+
+  void scrollToReceipt() {
+    if (_receiptKey.currentContext != null) {
+      Scrollable.ensureVisible(
+        _receiptKey.currentContext!,
+        duration: const Duration(milliseconds: 800),
+        curve: Curves.easeInOut,
+      );
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
+        controller: _scrollController,
         child: Padding(
           padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
           child: Column(
@@ -85,6 +99,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                 isDone = true;
                                 items = _items;
                               });
+                              scrollToReceipt();
                             },
                           );
                         } else {
@@ -92,6 +107,13 @@ class _MyHomePageState extends State<MyHomePage> {
                             key: oneSlotMachine,
                             itemSize: constraints.maxWidth / 3,
                             maxPrice: maxPrice,
+                            onSpinEnd: (_items) {
+                              setState(() {
+                                isDone = true;
+                                items = [_items];
+                              });
+                              scrollToReceipt();
+                            },
                           );
                         }
                       },
@@ -242,7 +264,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   )
                   : SizedBox(),
 
-              isDone ? McDoReceipt(items: items) : SizedBox(),
+              isDone
+                  ? Container(key: _receiptKey, child: Receipt(items: items))
+                  : SizedBox(),
+                
             ],
           ),
         ),
