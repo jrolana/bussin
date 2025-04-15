@@ -14,10 +14,21 @@ class _ReceiptState extends State<Receipt> with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<double> _slideAnimation;
   late Animation<double> _fadeAnimation;
+  bool isFavorite = false;
+
+  Future<void> checkIfFavorite() async {
+    bool isFavoriteFromDb = await DatabaseService.isAlreadyFavorite(
+      widget.items,
+    );
+    setState(() {
+      isFavorite = isFavoriteFromDb;
+    });
+  }
 
   @override
   void initState() {
     super.initState();
+    checkIfFavorite();
 
     _controller = AnimationController(
       vsync: this,
@@ -233,20 +244,31 @@ class _ReceiptState extends State<Receipt> with SingleTickerProviderStateMixin {
                         ),
                       ),
 
-                      // const SizedBox(height: 15),
-                      // ElevatedButton(
-                      //   onPressed: () async {
-                      //     await DatabaseService.insertFavorite(widget.items);
-                      //   },
-                      //   child: Row(
-                      //     mainAxisAlignment: MainAxisAlignment.center,
-                      //     spacing: 4,
-                      //     children: [
-                      //       Icon(Icons.favorite, color: Colors.pink),
-                      //       Text("Add to favorites"),
-                      //     ],
-                      //   ),
-                      // ),
+                      const SizedBox(height: 15),
+                      ElevatedButton(
+                        onPressed: () async {
+                          if (isFavorite) {
+                            await DatabaseService.removeFavorite(widget.items);
+                          } else {
+                            await DatabaseService.insertFavorite(widget.items);
+                          }
+
+                          setState(() {
+                            isFavorite = !isFavorite;
+                          });
+                        },
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          spacing: 4,
+                          children: [
+                            Icon(
+                              Icons.favorite,
+                              color: isFavorite ? Colors.pink : Colors.grey,
+                            ),
+                            Text("Add to favorites"),
+                          ],
+                        ),
+                      ),
                     ],
                   ),
                 ),
