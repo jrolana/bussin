@@ -53,7 +53,7 @@ class OneSlotMachineState extends State<OneSlotMachine> {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(color: Colors.white),
-      padding: EdgeInsets.fromLTRB(0, 0, 0, 48),
+      padding: EdgeInsets.symmetric(vertical: 10),
       child: Column(
         children: [
           Container(
@@ -77,7 +77,7 @@ class OneSlotMachineState extends State<OneSlotMachine> {
                 Align(
                   alignment: Alignment.topCenter,
                   child: Container(
-                    height: widget.itemSize * 2,
+                    height: widget.itemSize * 0.7,
                     decoration: BoxDecoration(
                       gradient: LinearGradient(
                         begin: Alignment.topCenter,

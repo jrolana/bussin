@@ -66,21 +66,24 @@ class SlotRollerState extends State<SlotRoller>
       width: widget.itemSize,
       child: ListView.builder(
         physics: const NeverScrollableScrollPhysics(),
+        padding: EdgeInsets.all(0),
         controller: _scrollController,
         itemCount: 63,
         itemBuilder: (context, index) {
           if (_targetItem != null && (!_reversed ? index == 6 : index == 61)) {
-            return Image.network(
-              _targetItem!.imageUrl,
-              width: widget.itemSize,
-              height: widget.itemSize,
+            return Center(
+              child: Image.network(
+                _targetItem!.imageUrl,
+                width: widget.itemSize,
+                height: widget.itemSize,
+              ),
             );
           }
 
           return Container(
             height: widget.itemSize,
             padding: EdgeInsets.all(10),
-            child: Image.asset('lib/assets/mcdo_logo.png'),
+            child: Center(child: Image.asset('lib/assets/mcdo_logo.png')),
           );
         },
       ),

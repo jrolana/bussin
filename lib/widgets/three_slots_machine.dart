@@ -109,9 +109,9 @@ class ThreeSlotsMachineState extends State<ThreeSlotsMachine> {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(color: Colors.white),
-      padding: EdgeInsets.fromLTRB(0, 0, 0, 25),
+      padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
       child: Column(
-        spacing: 30,
+        spacing: 10,
         children: [
           Container(
             height: widget.itemSize * 3,
@@ -144,7 +144,7 @@ class ThreeSlotsMachineState extends State<ThreeSlotsMachine> {
                 Align(
                   alignment: Alignment.topCenter,
                   child: Container(
-                    height: widget.itemSize * 2,
+                    height: widget.itemSize * 0.7,
                     decoration: BoxDecoration(
                       gradient: LinearGradient(
                         begin: Alignment.topCenter,
@@ -180,7 +180,6 @@ class ThreeSlotsMachineState extends State<ThreeSlotsMachine> {
 
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
-
             children: [
               TextButton(
                 onPressed: () {
