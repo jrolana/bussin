@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 class Receipt extends StatefulWidget {
   final List<Item> items;
-  const Receipt({Key? key, required this.items}) : super(key: key);
+  const Receipt({super.key, required this.items});
 
   @override
   State<Receipt> createState() => _ReceiptState();
@@ -88,9 +88,7 @@ class _ReceiptState extends State<Receipt> with SingleTickerProviderStateMixin {
                           color: Color(0xFF333333),
                         ),
                       ),
-                      const SizedBox(height: 5),
-
-                      const SizedBox(height: 20),
+                      const SizedBox(height: 25),
                       Container(
                         width: double.infinity,
                         padding: const EdgeInsets.symmetric(vertical: 8),

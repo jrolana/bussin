@@ -64,6 +64,33 @@ class _MyHomePageState extends State<MyHomePage> {
     }
   }
 
+  Future<void> showReceipt() async {
+    return showDialog<void>(
+      context: context,
+      barrierDismissible: false,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
+          backgroundColor: Colors.white,
+          contentPadding: EdgeInsets.all(0),
+          content: Stack(
+            children: [
+              Receipt(items: items),
+              IconButton(
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
+                icon: const Icon(Icons.close_rounded),
+              ),
+            ],
+          ),
+        );
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -100,7 +127,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                 isDone = true;
                                 items = _items;
                               });
-                              scrollToReceipt();
+                              showReceipt();
                             },
                           );
                         } else {
@@ -143,10 +170,16 @@ class _MyHomePageState extends State<MyHomePage> {
                         foregroundColor: Colors.black,
                         elevation: 4,
                       ),
-                      child: const Text(
-                        'Mode',
-                        style: TextStyle(fontWeight: FontWeight.w900),
-                      ),
+                      child:
+                          mode
+                              ? const Text(
+                                'Mixed',
+                                style: TextStyle(fontWeight: FontWeight.w900),
+                              )
+                              : const Text(
+                                'Meal',
+                                style: TextStyle(fontWeight: FontWeight.w900),
+                              ),
                     ),
                   ),
                   SizedBox(
@@ -266,9 +299,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   )
                   : SizedBox(),
 
-              isDone
-                  ? Container(key: _receiptKey, child: Receipt(items: items))
-                  : SizedBox(),
+              // isDone
+              //     ? Container(key: _receiptKey, child: Receipt(items: items))
+              //     : SizedBox(),
             ],
           ),
         ),
