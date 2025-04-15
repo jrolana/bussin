@@ -38,11 +38,14 @@ class SavedOrder extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(
-                          item.name,
-                          style: const TextStyle(
-                            fontSize: 15,
-                            color: Color(0xFF333333),
+                        SizedBox(
+                          width: 100,
+                          child: Text(
+                            item.name,
+                            style: const TextStyle(
+                              fontSize: 15,
+                              color: Color(0xFF333333),
+                            ),
                           ),
                         ),
                         Text(
@@ -84,19 +87,65 @@ class SavedOrder extends StatelessWidget {
             ),
 
             const SizedBox(height: 15),
-            ElevatedButton(
-              onPressed: () {
-                onRemove(items);
-              },
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                spacing: 4,
-                children: [
-                  Icon(Icons.favorite, color: Colors.pink),
-                  Text("Remove from favorites"),
-                ],
+
+            SizedBox(
+              width: double.infinity,
+              child: Material(
+                color: Colors.transparent,
+                child: InkWell(
+                  onTap: () {
+                    onRemove(items);
+                    SnackBar deletedSnackBar = SnackBar(
+                      content: Text("Order removed from favorites."),
+                    );
+                    ScaffoldMessenger.of(context).showSnackBar(deletedSnackBar);
+                  },
+                  borderRadius: BorderRadius.circular(8),
+                  child: Container(
+                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+                    decoration: BoxDecoration(
+                      color: Colors.red.shade50,
+                      borderRadius: BorderRadius.circular(8),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.red.shade100.withValues(alpha: 0.4),
+                          blurRadius: 3,
+                          offset: Offset(0, 1),
+                        ),
+                      ],
+                    ),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(Icons.favorite, color: Colors.red, size: 20),
+                        const SizedBox(width: 8),
+                        Text(
+                          'Favorited',
+                          style: TextStyle(
+                            color: Colors.red,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
               ),
             ),
+            // ElevatedButton(
+            //   onPressed: () {
+            //     onRemove(items);
+            //   },
+            //   child: Row(
+            //     mainAxisAlignment: MainAxisAlignment.center,
+            //     spacing: 4,
+            //     children: [
+            //       Icon(Icons.favorite, color: Colors.pink),
+            //       Text("Remove from favorites"),
+            //     ],
+            //   ),
+            // ),
           ],
         ),
       ),
