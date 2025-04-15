@@ -1,13 +1,9 @@
 import 'package:bussin/exceptions/not_enough_money.dart';
 import 'package:bussin/model/item.dart';
 import 'package:bussin/services/mcrandomizer_service.dart';
+import 'package:bussin/utils/constants.dart';
 import 'package:bussin/widgets/single_slot_roller.dart';
 import 'package:flutter/material.dart';
-
-const mainColor = Color(0xFFFF0000);
-const sideColor = Color(0xFFFFC107);
-const drinkColor = Color(0xFF40D0FD);
-const disabledColor = Color(0xFFB0B0B0);
 
 class ThreeSlotsMachine extends StatefulWidget {
   final double itemSize;

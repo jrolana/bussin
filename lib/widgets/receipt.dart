@@ -2,6 +2,35 @@ import 'package:bussin/model/item.dart';
 import 'package:bussin/services/database_service.dart';
 import 'package:flutter/material.dart';
 
+class ShowReceipt extends StatelessWidget {
+  const ShowReceipt({super.key, required this.items});
+
+  final List<Item> items;
+
+  @override
+  Widget build(BuildContext context) {
+    return AlertDialog(
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+      backgroundColor: Colors.white,
+      contentPadding: EdgeInsets.all(0),
+      content: Stack(
+        children: [
+          Receipt(items: items),
+          Padding(
+            padding: EdgeInsets.all(8),
+            child: IconButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              icon: const Icon(Icons.close_rounded),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
 class Receipt extends StatefulWidget {
   final List<Item> items;
   const Receipt({super.key, required this.items});
@@ -14,6 +43,8 @@ class _ReceiptState extends State<Receipt> with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<double> _slideAnimation;
   late Animation<double> _fadeAnimation;
+  late Animation<double> _scaleAnimation;
+
   bool isFavorite = false;
 
   Future<void> checkIfFavorite() async {
@@ -46,6 +77,11 @@ class _ReceiptState extends State<Receipt> with SingleTickerProviderStateMixin {
         curve: const Interval(0.5, 1.0, curve: Curves.easeIn),
       ),
     );
+
+    _scaleAnimation = Tween<double>(
+      begin: 1.0,
+      end: 1.2,
+    ).animate(CurvedAnimation(parent: _controller, curve: Curves.easeInOut));
 
     WidgetsBinding.instance.addPostFrameCallback((_) {
       _controller.forward();
@@ -144,7 +180,7 @@ class _ReceiptState extends State<Receipt> with SingleTickerProviderStateMixin {
                                     MainAxisAlignment.spaceBetween,
                                 children: [
                                   SizedBox(
-                                    width: 150,
+                                    width: 100,
                                     child: Text(
                                       widget.items[index].name,
                                       style: const TextStyle(
@@ -242,33 +278,89 @@ class _ReceiptState extends State<Receipt> with SingleTickerProviderStateMixin {
                         ),
                       ),
 
-                      const SizedBox(height: 15),
-                      ElevatedButton(
-                        onPressed: () async {
-                          if (isFavorite) {
-                            await DatabaseService.removeFavorite(widget.items);
-                          } else {
-                            await DatabaseService.insertFavorite(widget.items);
-                          }
+                      SizedBox(height: 15),
+                      SizedBox(
+                        width: double.infinity,
+                        child: Material(
+                          color: Colors.transparent,
+                          child: InkWell(
+                            onTap: () async {
+                              if (isFavorite) {
+                                await DatabaseService.removeFavorite(
+                                  widget.items,
+                                );
+                              } else {
+                                await DatabaseService.insertFavorite(
+                                  widget.items,
+                                );
+                              }
 
-                          setState(() {
-                            isFavorite = !isFavorite;
-                          });
-                        },
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          spacing: 4,
-                          children: [
-                            Icon(
-                              Icons.favorite,
-                              color: isFavorite ? Colors.pink : Colors.grey,
+                              setState(() {
+                                isFavorite = !isFavorite;
+                              });
+                            },
+                            borderRadius: BorderRadius.circular(8),
+                            child: AnimatedContainer(
+                              duration: const Duration(milliseconds: 200),
+                              padding: EdgeInsets.symmetric(
+                                horizontal: 16,
+                                vertical: 10,
+                              ),
+                              decoration: BoxDecoration(
+                                color:
+                                    isFavorite
+                                        ? Colors.red.shade50
+                                        : Colors.white,
+                                borderRadius: BorderRadius.circular(8),
+                                boxShadow: [
+                                  if (!isFavorite)
+                                    BoxShadow(
+                                      color: Colors.grey.shade200,
+                                      blurRadius: 3,
+                                      offset: Offset(0, 1),
+                                    ),
+                                  if (isFavorite)
+                                    BoxShadow(
+                                      color: Colors.red.shade100.withValues(
+                                        alpha: 0.4,
+                                      ),
+                                      blurRadius: 3,
+                                      offset: Offset(0, 1),
+                                    ),
+                                ],
+                              ),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  ScaleTransition(
+                                    scale: _scaleAnimation,
+                                    child: Icon(
+                                      isFavorite
+                                          ? Icons.favorite
+                                          : Icons.favorite_border,
+                                      color:
+                                          isFavorite
+                                              ? Colors.red
+                                              : Colors.grey.shade400,
+                                      size: 20,
+                                    ),
+                                  ),
+                                  const SizedBox(width: 8),
+                                  Text(
+                                    isFavorite ? 'Favorited' : 'Favorite',
+                                    style: TextStyle(
+                                      color:
+                                          isFavorite
+                                              ? Colors.red
+                                              : Colors.grey.shade600,
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
-                            Text(
-                              isFavorite
-                                  ? "Remove from favorites"
-                                  : "Add to favorites",
-                            ),
-                          ],
+                          ),
                         ),
                       ),
                     ],

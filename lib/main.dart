@@ -1,7 +1,7 @@
 import 'package:bussin/model/item.dart';
+import 'package:bussin/utils/constants.dart';
 import 'package:bussin/widgets/one_slot_machine.dart';
 import 'package:bussin/widgets/receipt.dart';
-import 'package:bussin/widgets/saved_order.dart';
 import 'package:bussin/widgets/three_slots_machine.dart';
 import 'services/database_service.dart';
 import 'package:flutter/material.dart';
@@ -47,46 +47,15 @@ class _MyHomePageState extends State<MyHomePage> {
   bool setBudget = false;
   bool mode = true;
   double maxPrice = double.maxFinite;
-  final Color mcColor = Color(0xFFDA291C);
   bool isDone = false;
   late List<Item> items;
-
-  final ScrollController _scrollController = ScrollController();
-  final GlobalKey _receiptKey = GlobalKey();
-
-  void scrollToReceipt() {
-    if (_receiptKey.currentContext != null) {
-      Scrollable.ensureVisible(
-        _receiptKey.currentContext!,
-        duration: const Duration(milliseconds: 800),
-        curve: Curves.easeInOut,
-      );
-    }
-  }
 
   Future<void> showReceipt() async {
     return showDialog<void>(
       context: context,
       barrierDismissible: false,
       builder: (BuildContext context) {
-        return AlertDialog(
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(12),
-          ),
-          backgroundColor: Colors.white,
-          contentPadding: EdgeInsets.all(0),
-          content: Stack(
-            children: [
-              Receipt(items: items),
-              IconButton(
-                onPressed: () {
-                  Navigator.of(context).pop();
-                },
-                icon: const Icon(Icons.close_rounded),
-              ),
-            ],
-          ),
-        );
+        return ShowReceipt(items: items);
       },
     );
   }
@@ -96,7 +65,6 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
-        controller: _scrollController,
         child: Padding(
           padding: const EdgeInsets.fromLTRB(8, 40, 8, 16),
           child: Column(
@@ -111,7 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12),
-                      color: mcColor,
+                      color: mcdColor,
                     ),
                     margin: EdgeInsets.only(top: 80),
                     padding: EdgeInsets.all(15),
@@ -140,7 +108,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                 isDone = true;
                                 items = [_items];
                               });
-                              scrollToReceipt();
+                              showReceipt();
                             },
                           );
                         }
@@ -259,7 +227,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             Icons.monetization_on_outlined,
                             color:
                                 Colors
-                                    .amber[700], // Using McDonald's gold/amber instead of red
+                                    .amber[700], 
                             size: 22,
                           ),
                           contentPadding: const EdgeInsets.symmetric(
@@ -298,10 +266,6 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   )
                   : SizedBox(),
-
-              // isDone
-              //     ? Container(key: _receiptKey, child: Receipt(items: items))
-              //     : SizedBox(),
             ],
           ),
         ),
@@ -309,3 +273,4 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
