@@ -81,7 +81,7 @@ class DatabaseService {
     for (var row in res) {
       List<Item> items = [];
       var decodedRow = jsonDecode(row['favorite']);
-      for (var itemMap in jsonDecode(decodedRow['favorite'])) {
+      for (var itemMap in decodedRow) {
         items.add(Item.fromMap(itemMap));
       }
       favorites.add(items);
