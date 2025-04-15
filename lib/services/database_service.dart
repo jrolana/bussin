@@ -71,16 +71,52 @@ class DatabaseService {
     );
   }
 
+  static Future<List<List<Item>>> getFavorites() async {
+    Database db = await instance.db;
+
+    List<Map<String, dynamic>> res = await db.query("favorites");
+
+    List<List<Item>> favorites = [];
+
+    for (var row in res) {
+      List<Item> items = [];
+      var decodedRow = jsonDecode(row['favorite']);
+      for (var itemMap in decodedRow) {
+        items.add(Item.fromMap(itemMap));
+      }
+      favorites.add(items);
+    }
+
+    return favorites;
+  }
+
   static Future<int> insertFavorite(List<Item> items, {Database? db}) async {
     db ??= await instance.db;
     return await db.insert("favorites", {
-      "order": jsonEncode(items),
+      "favorite": jsonEncode(items),
     }, conflictAlgorithm: ConflictAlgorithm.replace);
   }
 
-  Future<void> removeFavorite(int id) async {
+  static Future<void> removeFavorite(List<Item> items) async {
     Database db = await instance.db;
-    await db.delete("favorite", where: 'id = ?', whereArgs: [id]);
+    await db.delete(
+      "favorites",
+      where: 'favorite = ?',
+      whereArgs: [jsonEncode(items)],
+    );
+  }
+
+  static Future<bool> isAlreadyFavorite(List<Item> items) async {
+    Database db = await instance.db;
+
+    List<Map<String, dynamic>> res = await db.query(
+      "favorites",
+      where: "favorite = ?",
+      whereArgs: [jsonEncode(items)],
+      limit: 1,
+    );
+
+    return res.isNotEmpty;
   }
 
   Future<int> updateItem(Item item, String table, {Database? db}) async {
