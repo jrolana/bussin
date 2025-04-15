@@ -265,7 +265,11 @@ class _ReceiptState extends State<Receipt> with SingleTickerProviderStateMixin {
                               Icons.favorite,
                               color: isFavorite ? Colors.pink : Colors.grey,
                             ),
-                            Text("Add to favorites"),
+                            Text(
+                              isFavorite
+                                  ? "Remove from favorites"
+                                  : "Add to favorites",
+                            ),
                           ],
                         ),
                       ),
