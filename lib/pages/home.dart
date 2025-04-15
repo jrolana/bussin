@@ -93,8 +93,20 @@ class _HomePageState extends State<HomePage> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                SizedBox(
+                // Mode Toggle Button
+                Container(
                   height: 50,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(0.1),
+                        spreadRadius: 1,
+                        blurRadius: 4,
+                        offset: const Offset(0, 2),
+                      ),
+                    ],
+                  ),
                   child: ElevatedButton(
                     onPressed: () {
                       setState(() {
@@ -103,27 +115,37 @@ class _HomePageState extends State<HomePage> {
                       });
                     },
                     style: ElevatedButton.styleFrom(
-                      shape: ContinuousRectangleBorder(
+                      shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(12),
                       ),
                       backgroundColor: Colors.white,
-                      foregroundColor: Colors.black,
-                      elevation: 4,
+                      foregroundColor: accentColorDark,
+                      elevation: 0,
+                      padding: const EdgeInsets.symmetric(horizontal: 20),
                     ),
-                    child:
-                        mode
-                            ? const Text(
-                              'Mixed',
-                              style: TextStyle(fontWeight: FontWeight.w900),
-                            )
-                            : const Text(
-                              'Meal',
-                              style: TextStyle(fontWeight: FontWeight.w900),
-                            ),
+                    child: Text(
+                      mode ? 'Mixed' : 'Meal',
+                      style: const TextStyle(
+                        fontWeight: FontWeight.w900,
+                        fontSize: 16,
+                      ),
+                    ),
                   ),
                 ),
-                SizedBox(
+
+                Container(
                   height: 50,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withValues(alpha: 0.1),
+                        spreadRadius: 1,
+                        blurRadius: 4,
+                        offset: const Offset(0, 2),
+                      ),
+                    ],
+                  ),
                   child: ElevatedButton(
                     onPressed: () {
                       setState(() {
@@ -131,42 +153,63 @@ class _HomePageState extends State<HomePage> {
                       });
                     },
                     style: ElevatedButton.styleFrom(
-                      shape: ContinuousRectangleBorder(
+                      shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(12),
                       ),
-                      backgroundColor: Colors.white,
-                      foregroundColor: Colors.black,
-                      elevation: 4,
+                      backgroundColor:
+                          setBudget ? accentColorLight : Colors.white,
+                      foregroundColor: accentColorDark,
+                      elevation: 0,
+                      padding: const EdgeInsets.symmetric(horizontal: 20),
                     ),
                     child: const Text(
                       'Budget',
-                      style: TextStyle(fontWeight: FontWeight.w900),
+                      style: TextStyle(
+                        fontWeight: FontWeight.w900,
+                        fontSize: 16,
+                      ),
                     ),
                   ),
                 ),
 
-                ElevatedButton(
-                  onPressed: () {
-                    setState(() {
-                      isDone = false;
-                    });
-
-                    if (mode) {
-                      threeSlotsMachine.currentState?.rollSlots();
-                    } else {
-                      oneSlotMachine.currentState?.rollSlots();
-                    }
-                  },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.white,
-                    foregroundColor: Colors.black,
-                    shape: const CircleBorder(),
-                    padding: const EdgeInsets.all(40),
-                    elevation: 4,
+                Container(
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    boxShadow: [
+                      BoxShadow(
+                        color: accentColor.withValues(alpha: 0.3),
+                        spreadRadius: 2,
+                        blurRadius: 8,
+                        offset: const Offset(0, 3),
+                      ),
+                    ],
                   ),
-                  child: const Text(
-                    'Roll',
-                    style: TextStyle(fontWeight: FontWeight.w900),
+                  child: ElevatedButton(
+                    onPressed: () {
+                      setState(() {
+                        isDone = false;
+                      });
+
+                      if (mode) {
+                        threeSlotsMachine.currentState?.rollSlots();
+                      } else {
+                        oneSlotMachine.currentState?.rollSlots();
+                      }
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: accentColor,
+                      foregroundColor: Colors.white,
+                      shape: const CircleBorder(),
+                      padding: const EdgeInsets.all(30),
+                      elevation: 0,
+                    ),
+                    child: const Text(
+                      'Roll',
+                      style: TextStyle(
+                        fontWeight: FontWeight.w900,
+                        fontSize: 16,
+                      ),
+                    ),
                   ),
                 ),
               ],
@@ -197,7 +240,7 @@ class _HomePageState extends State<HomePage> {
                         ),
                         prefixIcon: Icon(
                           Icons.monetization_on_outlined,
-                          color: Colors.amber[700],
+                          color: accentColor,
                           size: 22,
                         ),
                         contentPadding: const EdgeInsets.symmetric(

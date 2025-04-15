@@ -1,5 +1,6 @@
 import 'package:bussin/model/item.dart';
 import 'package:bussin/services/database_service.dart';
+import 'package:bussin/utils/constants.dart';
 import 'package:flutter/material.dart';
 
 class SavedOrder extends StatelessWidget {
@@ -80,7 +81,7 @@ class SavedOrder extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
-                    color: Colors.amber[700],
+                    color: accentColor,
                   ),
                 ),
               ],

@@ -1,5 +1,6 @@
 import 'package:bussin/model/item.dart';
 import 'package:bussin/services/database_service.dart';
+import 'package:bussin/utils/constants.dart';
 import 'package:flutter/material.dart';
 
 class ShowReceipt extends StatelessWidget {
@@ -125,7 +126,7 @@ class _ReceiptState extends State<Receipt> with SingleTickerProviderStateMixin {
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      Icon(Icons.fastfood, color: Colors.amber[700], size: 40),
+                      Icon(Icons.fastfood, color: accentColor, size: 40),
                       const SizedBox(height: 10),
                       const Text(
                         "Bussin",
@@ -270,7 +271,7 @@ class _ReceiptState extends State<Receipt> with SingleTickerProviderStateMixin {
                                 style: TextStyle(
                                   fontSize: 16,
                                   fontWeight: FontWeight.bold,
-                                  color: Colors.amber[700],
+                                  color: accentColor,
                                 ),
                               ),
                             ],

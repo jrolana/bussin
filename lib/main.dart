@@ -1,5 +1,6 @@
 import 'package:bussin/pages/favorites.dart';
 import 'package:bussin/pages/home.dart';
+import 'package:bussin/utils/constants.dart';
 
 import 'services/database_service.dart';
 import 'package:flutter/material.dart';
@@ -41,27 +42,46 @@ class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: NavigationBar(
-        onDestinationSelected: (int index) {
-          setState(() {
-            currentPageIndex = index;
-          });
-        },
-        indicatorColor: Colors.white,
-        backgroundColor: Colors.white,
-        selectedIndex: currentPageIndex,
-        destinations: const <Widget>[
-          NavigationDestination(
-            selectedIcon: Icon(Icons.home),
-            icon: Icon(Icons.home_outlined),
-            label: 'Home',
-          ),
-          NavigationDestination(
-            icon: Icon(Icons.favorite_border_outlined),
-            selectedIcon: Icon(Icons.favorite, color: Colors.pink),
-            label: 'Favorites',
-          ),
-        ],
+      bottomNavigationBar: Container(
+        decoration: BoxDecoration(
+          color: Colors.white,
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withValues(alpha: 0.05),
+              blurRadius: 5,
+              spreadRadius: 0,
+              offset: const Offset(0, -1),
+            ),
+          ],
+        ),
+        child: NavigationBar(
+          onDestinationSelected: (int index) {
+            setState(() {
+              currentPageIndex = index;
+            });
+          },
+          indicatorColor: Colors.red.withValues(alpha: 0.1),
+          backgroundColor: Colors.white,
+          elevation: 0,
+          selectedIndex: currentPageIndex,
+          labelBehavior: NavigationDestinationLabelBehavior.onlyShowSelected,
+          height: 65,
+          destinations: <Widget>[
+            NavigationDestination(
+              selectedIcon: Icon(Icons.restaurant, color: mcdColor),
+              icon: Icon(Icons.restaurant_outlined, color: Colors.grey[600]),
+              label: 'Meals',
+            ),
+            NavigationDestination(
+              selectedIcon: Icon(Icons.favorite, color: mcdColor),
+              icon: Icon(
+                Icons.favorite_border_outlined,
+                color: Colors.grey[600],
+              ),
+              label: 'Favorites',
+            ),
+          ],
+        ),
       ),
       backgroundColor: Colors.white,
       body: SafeArea(
@@ -70,4 +90,3 @@ class _MainPageState extends State<MainPage> {
     );
   }
 }
-
