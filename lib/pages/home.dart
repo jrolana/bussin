@@ -1,11 +1,13 @@
 import 'package:bussin/model/item.dart';
+import 'package:bussin/utils/constants.dart';
 import 'package:bussin/widgets/one_slot_machine.dart';
 import 'package:bussin/widgets/receipt.dart';
 import 'package:bussin/widgets/three_slots_machine.dart';
+import 'package:bussin/services/database_service.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
-  HomePage({super.key});
+  const HomePage({super.key});
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -19,31 +21,26 @@ class _HomePageState extends State<HomePage> {
   bool setBudget = false;
   bool mode = true;
   double maxPrice = double.maxFinite;
-  final Color mcColor = Color(0xFFDA291C);
   bool isDone = false;
   late List<Item> items;
 
-  final ScrollController _scrollController = ScrollController();
-  final GlobalKey _receiptKey = GlobalKey();
-
-  void scrollToReceipt() {
-    if (_receiptKey.currentContext != null) {
-      Scrollable.ensureVisible(
-        _receiptKey.currentContext!,
-        duration: const Duration(milliseconds: 800),
-        curve: Curves.easeInOut,
-      );
-    }
+  Future<void> showReceipt() async {
+    return showDialog<void>(
+      context: context,
+      barrierDismissible: false,
+      builder: (BuildContext context) {
+        return ShowReceipt(items: items);
+      },
+    );
   }
 
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-      controller: _scrollController,
       child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 8),
+        padding: const EdgeInsets.fromLTRB(8, 40, 8, 16),
         child: Column(
-          spacing: 5,
+          spacing: 25,
           children: [
             Stack(
               children: [
@@ -54,7 +51,7 @@ class _HomePageState extends State<HomePage> {
                 Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(12),
-                    color: mcColor,
+                    color: mcdColor,
                   ),
                   margin: EdgeInsets.only(top: 80),
                   padding: EdgeInsets.all(15),
@@ -70,7 +67,7 @@ class _HomePageState extends State<HomePage> {
                               isDone = true;
                               items = _items;
                             });
-                            scrollToReceipt();
+                            showReceipt();
                           },
                         );
                       } else {
@@ -83,7 +80,7 @@ class _HomePageState extends State<HomePage> {
                               isDone = true;
                               items = [_items];
                             });
-                            scrollToReceipt();
+                            showReceipt();
                           },
                         );
                       }
@@ -96,8 +93,20 @@ class _HomePageState extends State<HomePage> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                SizedBox(
+                // Mode Toggle Button
+                Container(
                   height: 50,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(0.1),
+                        spreadRadius: 1,
+                        blurRadius: 4,
+                        offset: const Offset(0, 2),
+                      ),
+                    ],
+                  ),
                   child: ElevatedButton(
                     onPressed: () {
                       setState(() {
@@ -106,21 +115,37 @@ class _HomePageState extends State<HomePage> {
                       });
                     },
                     style: ElevatedButton.styleFrom(
-                      shape: ContinuousRectangleBorder(
+                      shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(12),
                       ),
                       backgroundColor: Colors.white,
-                      foregroundColor: Colors.black,
-                      elevation: 4,
+                      foregroundColor: accentColorDark,
+                      elevation: 0,
+                      padding: const EdgeInsets.symmetric(horizontal: 20),
                     ),
-                    child: const Text(
-                      'Mode',
-                      style: TextStyle(fontWeight: FontWeight.w900),
+                    child: Text(
+                      mode ? 'Mixed' : 'Meal',
+                      style: const TextStyle(
+                        fontWeight: FontWeight.w900,
+                        fontSize: 16,
+                      ),
                     ),
                   ),
                 ),
-                SizedBox(
+
+                Container(
                   height: 50,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withValues(alpha: 0.1),
+                        spreadRadius: 1,
+                        blurRadius: 4,
+                        offset: const Offset(0, 2),
+                      ),
+                    ],
+                  ),
                   child: ElevatedButton(
                     onPressed: () {
                       setState(() {
@@ -128,42 +153,63 @@ class _HomePageState extends State<HomePage> {
                       });
                     },
                     style: ElevatedButton.styleFrom(
-                      shape: ContinuousRectangleBorder(
+                      shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(12),
                       ),
-                      backgroundColor: Colors.white,
-                      foregroundColor: Colors.black,
-                      elevation: 4,
+                      backgroundColor:
+                          setBudget ? accentColorLight : Colors.white,
+                      foregroundColor: accentColorDark,
+                      elevation: 0,
+                      padding: const EdgeInsets.symmetric(horizontal: 20),
                     ),
                     child: const Text(
                       'Budget',
-                      style: TextStyle(fontWeight: FontWeight.w900),
+                      style: TextStyle(
+                        fontWeight: FontWeight.w900,
+                        fontSize: 16,
+                      ),
                     ),
                   ),
                 ),
 
-                ElevatedButton(
-                  onPressed: () {
-                    setState(() {
-                      isDone = false;
-                    });
-
-                    if (mode) {
-                      threeSlotsMachine.currentState?.rollSlots();
-                    } else {
-                      oneSlotMachine.currentState?.rollSlots();
-                    }
-                  },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.white,
-                    foregroundColor: Colors.black,
-                    shape: const CircleBorder(),
-                    padding: const EdgeInsets.all(40),
-                    elevation: 4,
+                Container(
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    boxShadow: [
+                      BoxShadow(
+                        color: accentColor.withValues(alpha: 0.3),
+                        spreadRadius: 2,
+                        blurRadius: 8,
+                        offset: const Offset(0, 3),
+                      ),
+                    ],
                   ),
-                  child: const Text(
-                    'Roll',
-                    style: TextStyle(fontWeight: FontWeight.w900),
+                  child: ElevatedButton(
+                    onPressed: () {
+                      setState(() {
+                        isDone = false;
+                      });
+
+                      if (mode) {
+                        threeSlotsMachine.currentState?.rollSlots();
+                      } else {
+                        oneSlotMachine.currentState?.rollSlots();
+                      }
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: accentColor,
+                      foregroundColor: Colors.white,
+                      shape: const CircleBorder(),
+                      padding: const EdgeInsets.all(30),
+                      elevation: 0,
+                    ),
+                    child: const Text(
+                      'Roll',
+                      style: TextStyle(
+                        fontWeight: FontWeight.w900,
+                        fontSize: 16,
+                      ),
+                    ),
                   ),
                 ),
               ],
@@ -194,9 +240,7 @@ class _HomePageState extends State<HomePage> {
                         ),
                         prefixIcon: Icon(
                           Icons.monetization_on_outlined,
-                          color:
-                              Colors
-                                  .amber[700], // Using McDonald's gold/amber instead of red
+                          color: accentColor,
                           size: 22,
                         ),
                         contentPadding: const EdgeInsets.symmetric(
@@ -233,10 +277,6 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                 )
-                : SizedBox(),
-
-            isDone
-                ? Container(key: _receiptKey, child: Receipt(items: items))
                 : SizedBox(),
           ],
         ),
