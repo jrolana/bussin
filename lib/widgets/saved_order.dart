@@ -1,9 +1,12 @@
 import 'package:bussin/model/item.dart';
+import 'package:bussin/services/database_service.dart';
 import 'package:flutter/material.dart';
 
 class SavedOrder extends StatelessWidget {
   final List<Item> items;
-  const SavedOrder({Key? key, required this.items}) : super(key: key);
+  final Function(List<Item> items) onRemove;
+  const SavedOrder({Key? key, required this.items, required this.onRemove})
+    : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -81,10 +84,18 @@ class SavedOrder extends StatelessWidget {
             ),
 
             const SizedBox(height: 15),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              spacing: 4,
-              children: [Icon(Icons.delete, color: Colors.red), Text("Remove")],
+            ElevatedButton(
+              onPressed: () {
+                onRemove(items);
+              },
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                spacing: 4,
+                children: [
+                  Icon(Icons.favorite, color: Colors.pink),
+                  Text("Remove from favorites"),
+                ],
+              ),
             ),
           ],
         ),
